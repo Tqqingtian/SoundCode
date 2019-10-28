@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 975927436
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4f47b7ed60467ee9473c72ffaa2b9569
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Women/Loli/No_Weapon/Hit.anim
+Dependencies: []

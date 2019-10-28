@@ -1,0 +1,52 @@
+---@class System.ExceptionResource : System.Enum
+---@field public Argument_ImplementIComparable System.ExceptionResource @static
+---@field public Argument_InvalidType System.ExceptionResource @static
+---@field public Argument_InvalidArgumentForComparison System.ExceptionResource @static
+---@field public Argument_InvalidRegistryKeyPermissionCheck System.ExceptionResource @static
+---@field public ArgumentOutOfRange_NeedNonNegNum System.ExceptionResource @static
+---@field public Arg_ArrayPlusOffTooSmall System.ExceptionResource @static
+---@field public Arg_NonZeroLowerBound System.ExceptionResource @static
+---@field public Arg_RankMultiDimNotSupported System.ExceptionResource @static
+---@field public Arg_RegKeyDelHive System.ExceptionResource @static
+---@field public Arg_RegKeyStrLenBug System.ExceptionResource @static
+---@field public Arg_RegSetStrArrNull System.ExceptionResource @static
+---@field public Arg_RegSetMismatchedKind System.ExceptionResource @static
+---@field public Arg_RegSubKeyAbsent System.ExceptionResource @static
+---@field public Arg_RegSubKeyValueAbsent System.ExceptionResource @static
+---@field public Argument_AddingDuplicate System.ExceptionResource @static
+---@field public Serialization_InvalidOnDeser System.ExceptionResource @static
+---@field public Serialization_MissingKeys System.ExceptionResource @static
+---@field public Serialization_NullKey System.ExceptionResource @static
+---@field public Argument_InvalidArrayType System.ExceptionResource @static
+---@field public NotSupported_KeyCollectionSet System.ExceptionResource @static
+---@field public NotSupported_ValueCollectionSet System.ExceptionResource @static
+---@field public ArgumentOutOfRange_SmallCapacity System.ExceptionResource @static
+---@field public ArgumentOutOfRange_Index System.ExceptionResource @static
+---@field public Argument_InvalidOffLen System.ExceptionResource @static
+---@field public Argument_ItemNotExist System.ExceptionResource @static
+---@field public ArgumentOutOfRange_Count System.ExceptionResource @static
+---@field public ArgumentOutOfRange_InvalidThreshold System.ExceptionResource @static
+---@field public ArgumentOutOfRange_ListInsert System.ExceptionResource @static
+---@field public NotSupported_ReadOnlyCollection System.ExceptionResource @static
+---@field public InvalidOperation_CannotRemoveFromStackOrQueue System.ExceptionResource @static
+---@field public InvalidOperation_EmptyQueue System.ExceptionResource @static
+---@field public InvalidOperation_EnumOpCantHappen System.ExceptionResource @static
+---@field public InvalidOperation_EnumFailedVersion System.ExceptionResource @static
+---@field public InvalidOperation_EmptyStack System.ExceptionResource @static
+---@field public ArgumentOutOfRange_BiggerThanCollection System.ExceptionResource @static
+---@field public InvalidOperation_EnumNotStarted System.ExceptionResource @static
+---@field public InvalidOperation_EnumEnded System.ExceptionResource @static
+---@field public NotSupported_SortedListNestedWrite System.ExceptionResource @static
+---@field public InvalidOperation_NoValue System.ExceptionResource @static
+---@field public InvalidOperation_RegRemoveSubKey System.ExceptionResource @static
+---@field public Security_RegistryPermission System.ExceptionResource @static
+---@field public UnauthorizedAccess_RegistryNoWrite System.ExceptionResource @static
+---@field public ObjectDisposed_RegKeyClosed System.ExceptionResource @static
+---@field public NotSupported_InComparableType System.ExceptionResource @static
+---@field public Argument_InvalidRegistryOptionsCheck System.ExceptionResource @static
+---@field public Argument_InvalidRegistryViewCheck System.ExceptionResource @static
+---@field public value__ number
+local m = {}
+
+System.ExceptionResource = m
+return m

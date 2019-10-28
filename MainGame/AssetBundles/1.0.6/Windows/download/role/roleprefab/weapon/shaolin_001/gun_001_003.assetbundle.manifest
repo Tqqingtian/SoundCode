@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 600645636
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cc78bc46f5446c39791709d754dac2a1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4fdf54bbc8ddcb1aa5ca69ee769515b8
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Weapon/Shaolin_001/Gun_001_003.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/shaolin/gun_001_003/materials/gun_001_003.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/shaolin/gun_001_003/gun_001_003.assetbundle

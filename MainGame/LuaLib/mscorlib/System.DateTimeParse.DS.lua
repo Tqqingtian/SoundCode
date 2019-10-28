@@ -1,0 +1,45 @@
+---@class System.DateTimeParse.DS : System.Enum
+---@field public BEGIN System.DateTimeParse.DS @static
+---@field public N System.DateTimeParse.DS @static
+---@field public NN System.DateTimeParse.DS @static
+---@field public D_Nd System.DateTimeParse.DS @static
+---@field public D_NN System.DateTimeParse.DS @static
+---@field public D_NNd System.DateTimeParse.DS @static
+---@field public D_M System.DateTimeParse.DS @static
+---@field public D_MN System.DateTimeParse.DS @static
+---@field public D_NM System.DateTimeParse.DS @static
+---@field public D_MNd System.DateTimeParse.DS @static
+---@field public D_NDS System.DateTimeParse.DS @static
+---@field public D_Y System.DateTimeParse.DS @static
+---@field public D_YN System.DateTimeParse.DS @static
+---@field public D_YNd System.DateTimeParse.DS @static
+---@field public D_YM System.DateTimeParse.DS @static
+---@field public D_YMd System.DateTimeParse.DS @static
+---@field public D_S System.DateTimeParse.DS @static
+---@field public T_S System.DateTimeParse.DS @static
+---@field public T_Nt System.DateTimeParse.DS @static
+---@field public T_NNt System.DateTimeParse.DS @static
+---@field public ERROR System.DateTimeParse.DS @static
+---@field public DX_NN System.DateTimeParse.DS @static
+---@field public DX_NNN System.DateTimeParse.DS @static
+---@field public DX_MN System.DateTimeParse.DS @static
+---@field public DX_NM System.DateTimeParse.DS @static
+---@field public DX_MNN System.DateTimeParse.DS @static
+---@field public DX_DS System.DateTimeParse.DS @static
+---@field public DX_DSN System.DateTimeParse.DS @static
+---@field public DX_NDS System.DateTimeParse.DS @static
+---@field public DX_NNDS System.DateTimeParse.DS @static
+---@field public DX_YNN System.DateTimeParse.DS @static
+---@field public DX_YMN System.DateTimeParse.DS @static
+---@field public DX_YN System.DateTimeParse.DS @static
+---@field public DX_YM System.DateTimeParse.DS @static
+---@field public TX_N System.DateTimeParse.DS @static
+---@field public TX_NN System.DateTimeParse.DS @static
+---@field public TX_NNN System.DateTimeParse.DS @static
+---@field public TX_TS System.DateTimeParse.DS @static
+---@field public DX_NNY System.DateTimeParse.DS @static
+---@field public value__ number
+local m = {}
+
+System.DateTimeParse.DS = m
+return m

@@ -1,0 +1,51 @@
+--数据访问
+WorldMapDBModel = { }
+
+local this = WorldMapDBModel;
+
+local worldmapTable = { }; --定义表格
+
+function WorldMapDBModel.LoadList()
+    GameInit.AddTotalLoadTableCount();
+    CS.TQ.GameEntry.Lua:LoadDataTable("WorldMap",this.LoadFormMS);
+end
+
+function WorldMapDBModel.LoadFormMS(ms)
+    local rows=ms:ReadInt();
+    ms:ReadInt();
+
+for i = 0, rows, 1 do
+        worldmapTable[#worldmapTable + 1] = WorldMapEntity.New(
+                ms:ReadInt(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String()
+        );
+    end
+GameInit.LoadOneTableComplete();
+end
+
+function WorldMapDBModel.GetList()
+    return worldmapTable;
+end
+
+function WorldMapDBModel.GetEntity(id)
+    local ret = nil;
+    for i = 1, #worldmapTable, 1 do
+        if (worldmapTable[i].Id == id) then
+            ret = worldmapTable[i];
+            break;
+        end
+    end
+    return ret;
+end

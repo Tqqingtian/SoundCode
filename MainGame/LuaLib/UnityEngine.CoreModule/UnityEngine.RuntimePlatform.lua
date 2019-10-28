@@ -1,0 +1,41 @@
+---@class UnityEngine.RuntimePlatform : System.Enum
+---@field public OSXEditor UnityEngine.RuntimePlatform @static
+---@field public OSXPlayer UnityEngine.RuntimePlatform @static
+---@field public WindowsPlayer UnityEngine.RuntimePlatform @static
+---@field public OSXWebPlayer UnityEngine.RuntimePlatform @static
+---@field public OSXDashboardPlayer UnityEngine.RuntimePlatform @static
+---@field public WindowsWebPlayer UnityEngine.RuntimePlatform @static
+---@field public WindowsEditor UnityEngine.RuntimePlatform @static
+---@field public IPhonePlayer UnityEngine.RuntimePlatform @static
+---@field public XBOX360 UnityEngine.RuntimePlatform @static
+---@field public PS3 UnityEngine.RuntimePlatform @static
+---@field public Android UnityEngine.RuntimePlatform @static
+---@field public NaCl UnityEngine.RuntimePlatform @static
+---@field public FlashPlayer UnityEngine.RuntimePlatform @static
+---@field public LinuxPlayer UnityEngine.RuntimePlatform @static
+---@field public LinuxEditor UnityEngine.RuntimePlatform @static
+---@field public WebGLPlayer UnityEngine.RuntimePlatform @static
+---@field public MetroPlayerX86 UnityEngine.RuntimePlatform @static
+---@field public WSAPlayerX86 UnityEngine.RuntimePlatform @static
+---@field public MetroPlayerX64 UnityEngine.RuntimePlatform @static
+---@field public WSAPlayerX64 UnityEngine.RuntimePlatform @static
+---@field public MetroPlayerARM UnityEngine.RuntimePlatform @static
+---@field public WSAPlayerARM UnityEngine.RuntimePlatform @static
+---@field public WP8Player UnityEngine.RuntimePlatform @static
+---@field public BB10Player UnityEngine.RuntimePlatform @static
+---@field public BlackBerryPlayer UnityEngine.RuntimePlatform @static
+---@field public TizenPlayer UnityEngine.RuntimePlatform @static
+---@field public PSP2 UnityEngine.RuntimePlatform @static
+---@field public PS4 UnityEngine.RuntimePlatform @static
+---@field public PSM UnityEngine.RuntimePlatform @static
+---@field public XboxOne UnityEngine.RuntimePlatform @static
+---@field public SamsungTVPlayer UnityEngine.RuntimePlatform @static
+---@field public WiiU UnityEngine.RuntimePlatform @static
+---@field public tvOS UnityEngine.RuntimePlatform @static
+---@field public Switch UnityEngine.RuntimePlatform @static
+---@field public Lumin UnityEngine.RuntimePlatform @static
+---@field public value__ number
+local m = {}
+
+UnityEngine.RuntimePlatform = m
+return m

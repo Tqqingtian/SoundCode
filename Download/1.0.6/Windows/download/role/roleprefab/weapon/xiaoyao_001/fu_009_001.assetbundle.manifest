@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 814927106
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6cbae8862333f5325f6a4c9158154697
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ce00b96eb05100871f39954dc67941ec
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Weapon/Xiaoyao_001/Fu_009_001.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/xiaoyao/fu_009_001/materials/fu_009_002.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/xiaoyao/fu_009_001/materials/fu_009_001.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/xiaoyao/fu_009_001/fu_009_001.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/xiaoyao/fu_008_001/fu_008_001.assetbundle

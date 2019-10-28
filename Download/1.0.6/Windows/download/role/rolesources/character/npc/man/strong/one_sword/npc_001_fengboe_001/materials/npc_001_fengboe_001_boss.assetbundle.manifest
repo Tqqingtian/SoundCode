@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 124227703
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f5888ad8c624d907ad611dcd901c6472
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9b71393b2ee9cb5c4f2e835e78d3d8d4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Man/Strong/One_Sword/Npc_001_fengboe_001/Materials/Npc_001_fengboe_001_boss.mat
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/strong/one_sword/npc_001_fengboe_001/materials/npc_001_fengboe_001.assetbundle

@@ -1,0 +1,20 @@
+UI_WaitingCtrl ={};
+
+local this=UI_WaitingCtrl;
+
+function UI_WaitingCtrl.OnInit(userData)
+    print('UI_WaitingCtrl.OnInit');
+
+end
+
+function UI_WaitingCtrl.OnOpen(userData)
+     UI_WaitingView.txtTips.text = userData;
+end
+
+function UI_WaitingCtrl.OnClose()
+
+end
+
+function UI_WaitingCtrl.OnBeforDestry()
+
+end

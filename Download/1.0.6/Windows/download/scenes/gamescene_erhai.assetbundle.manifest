@@ -1,0 +1,63 @@
+ManifestFileVersion: 0
+CRC: 3131834605
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ebe63967f324856236994ecd653ed3d6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d5eac48e4e6027d8b4cddf515c0b0f91
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 364d30e4f9a36484185b85f23c8c8e00, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cc44eb89025aeba4fa3e4bd368b61e45, type: 3}
+- Class: 121
+  Script: {instanceID: 0}
+- Class: 123
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Scenes/GameScene_ErHai.unity
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/cusshaders.assetbundle

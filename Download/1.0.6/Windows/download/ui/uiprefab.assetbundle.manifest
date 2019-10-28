@@ -1,0 +1,65 @@
+ManifestFileVersion: 0
+CRC: 3885384175
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f5b648819d0d6003faf11f3cbf89d553
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 444e13197316b10ced3f9a8427ab57a4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -2061169968, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1a2d39437e49a424ebf58deea15de967, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 35e0ce45495252e459a83c871d96fedb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e3c493b5100a33749a82bea4648b854b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d4b010c65ae0a3b479c15c24ffbb95c8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0313da7d37cda9441bd172dbaa31cc35, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6219f83f3b0123f40af4d0716d1d0e50, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/UI/UIPrefab/FormChinese/UI_Task.prefab
+- Assets/Download/UI/UIPrefab/FormChinese/ItemPrefab.prefab
+- Assets/Download/UI/UIPrefab/Loading/UI_Loading.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/ui/uifont.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/ui/uires/loading/loading.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/ui/uires/uicommon.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/ui/uires/uiframe.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/ui/uires/uititlebar.assetbundle

@@ -1,0 +1,16 @@
+Sys_UIItemEntity = { Id = 0, Desc = "", Name = "", AssetPath_Chinese = "", AssetPath_English = "" }
+
+Sys_UIItemEntity.__index = Sys_UIItemEntity;
+
+function Sys_UIItemEntity.New(Id, Desc, Name, AssetPath_Chinese, AssetPath_English)
+    local self = { };
+    setmetatable(self, Sys_UIItemEntity);
+
+    self.Id = Id;
+    self.Desc = Desc;
+    self.Name = Name;
+    self.AssetPath_Chinese = AssetPath_Chinese;
+    self.AssetPath_English = AssetPath_English;
+
+    return self;
+end

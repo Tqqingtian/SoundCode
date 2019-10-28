@@ -1,0 +1,2 @@
+---@class UnityEngineInternal
+UnityEngineInternal = {}

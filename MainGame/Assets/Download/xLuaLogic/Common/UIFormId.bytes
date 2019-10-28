@@ -1,0 +1,27 @@
+UIFormId={
+
+    --Loading
+    LoadOneDataTableComplete = 1;
+
+    LogOn = 2;
+
+    --选择区服UI
+    SelectAreaClothing = 3;
+    --等待遮罩
+    Waiting = 4;
+
+    --提示窗口
+    PromptWindow = 5;
+
+    --选择角色
+    SelectRole = 1000;
+
+    --创建角色
+    CreateRole = 1001;
+
+    --任务列表
+    UI_Task = 101;
+
+
+
+}

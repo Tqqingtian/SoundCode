@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1341546203
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a3cb4778a4536513055384ee41667168
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f98fb72295b3909d74ffedc0d76189f3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Building/fb_zhandou_shibei.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/building/fb_zhandou_shibei/materials/fb_zhandou_shibei.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/building/fb_zhandou_shibei/fb_zhandou_shibei.assetbundle

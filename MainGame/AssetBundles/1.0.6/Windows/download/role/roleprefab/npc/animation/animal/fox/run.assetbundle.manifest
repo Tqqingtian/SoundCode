@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2667508159
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3b3023b1dfb11fe50c71d0351e595f61
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Animal/Fox/Run.anim
+Dependencies: []

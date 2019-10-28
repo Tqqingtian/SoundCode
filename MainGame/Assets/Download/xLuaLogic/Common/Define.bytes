@@ -1,0 +1,23 @@
+print('启动了Define.lua')
+--这里要把常用的引擎类型都加入进来
+WWW = CS.UnityEngine.WWW;
+GameObject = CS.UnityEngine.GameObject;
+Transform = CS.UnityEngine.Transform;
+UnityObj =CS.UnityEngine.Object;
+Color = CS.UnityEngine.Color;
+Vector3 = CS.UnityEngine.Vector3;
+Vector2 = CS.UnityEngine.Vector2;
+GameEntry=CS.TQ.GameEntry;
+JsonDataLua = CS.TQ.JsonDataLua;
+ReTValue = CS.ReTValue;
+PlayerPrefs = CS.UnityEngine.PlayerPrefs;
+
+HttpURL = "http://127.0.0.1:8890";
+
+CtrlNames={
+
+}
+
+DBModelName={
+
+}

@@ -1,0 +1,45 @@
+---@class Consts : System.Object
+---@field public MonoVersion string @static
+---@field public MonoCompany string @static
+---@field public MonoProduct string @static
+---@field public MonoCopyright string @static
+---@field public MonoCorlibVersion number @static
+---@field public FxVersion string @static
+---@field public FxFileVersion string @static
+---@field public EnvironmentVersion string @static
+---@field public VsVersion string @static
+---@field public VsFileVersion string @static
+---@field public AssemblyI18N string @static
+---@field public AssemblyMicrosoft_JScript string @static
+---@field public AssemblyMicrosoft_VisualStudio string @static
+---@field public AssemblyMicrosoft_VisualStudio_Web string @static
+---@field public AssemblyMicrosoft_VSDesigner string @static
+---@field public AssemblyMono_Http string @static
+---@field public AssemblyMono_Posix string @static
+---@field public AssemblyMono_Security string @static
+---@field public AssemblyMono_Messaging_RabbitMQ string @static
+---@field public AssemblyCorlib string @static
+---@field public AssemblySystem string @static
+---@field public AssemblySystem_Data string @static
+---@field public AssemblySystem_Design string @static
+---@field public AssemblySystem_DirectoryServices string @static
+---@field public AssemblySystem_Drawing string @static
+---@field public AssemblySystem_Drawing_Design string @static
+---@field public AssemblySystem_Messaging string @static
+---@field public AssemblySystem_Security string @static
+---@field public AssemblySystem_ServiceProcess string @static
+---@field public AssemblySystem_Web string @static
+---@field public AssemblySystem_Windows_Forms string @static
+---@field public AssemblySystem_2_0 string @static
+---@field public AssemblySystemCore_3_5 string @static
+---@field public AssemblySystem_Core string @static
+---@field public WindowsBase_3_0 string @static
+---@field public AssemblyWindowsBase string @static
+---@field public AssemblyPresentationCore_3_5 string @static
+---@field public AssemblyPresentationCore_4_0 string @static
+---@field public AssemblyPresentationFramework_3_5 string @static
+---@field public AssemblySystemServiceModel_3_0 string @static
+local m = {}
+
+Consts = m
+return m

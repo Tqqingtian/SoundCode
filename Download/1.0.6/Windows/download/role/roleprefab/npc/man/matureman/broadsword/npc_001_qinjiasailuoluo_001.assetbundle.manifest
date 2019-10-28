@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2238143468
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3c6118f2d0f18418fbe9a89211c25192
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Man/MatureMan/Broadsword/Npc_001_qinjiasailuoluo_001.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/matureman/broadsword/npc_001_qinjiasailuoluo_001/materials/npc_001_qinjiasailuoluo_001.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/matureman/broadsword/npc_001_qinjiasailuoluo_001/npc_001_qinjiasailuoluo_001.assetbundle

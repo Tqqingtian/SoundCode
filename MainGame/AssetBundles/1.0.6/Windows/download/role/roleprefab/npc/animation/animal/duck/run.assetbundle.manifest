@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1647243880
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fa477a3fc7a76cf142f7b83a6c84dc78
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Animal/Duck/Run.anim
+Dependencies: []

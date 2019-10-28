@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 816584153
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5fa16fb0e9c3d0db0493307d754fc1ec
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 777144212014d9a371a5fa15d2bd7583
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Weapon/Shaolin/Gun_001_009/Gun_001_009.FBX
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/shaolin/gun_001_009/materials/gun_001_009.assetbundle

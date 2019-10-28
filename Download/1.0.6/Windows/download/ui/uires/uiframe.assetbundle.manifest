@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 3961609362
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 860a89288896b710cb27e4dbe63e4bd3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/UI/UIRes/UIFrame/Frame_9.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_12.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_5.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_1.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_8.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_14.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_7.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_2.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_4.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_10.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_13.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_11.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_3.png
+- Assets/Download/UI/UIRes/UIFrame/Frame_6.png
+Dependencies: []

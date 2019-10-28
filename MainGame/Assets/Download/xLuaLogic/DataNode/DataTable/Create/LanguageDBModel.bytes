@@ -1,0 +1,43 @@
+--数据访问
+LanguageDBModel = { }
+
+local this = LanguageDBModel;
+
+local languageTable = { }; --定义表格
+
+function LanguageDBModel.LoadList()
+    GameInit.AddTotalLoadTableCount();
+    CS.TQ.GameEntry.Lua:LoadDataTable("Language",this.LoadFormMS);
+end
+
+function LanguageDBModel.LoadFormMS(ms)
+    local rows=ms:ReadInt();
+    ms:ReadInt();
+
+for i = 0, rows, 1 do
+        languageTable[#languageTable + 1] = LanguageEntity.New(
+                ms:ReadInt(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String(),
+                ms:ReadUTF8String()
+        );
+    end
+GameInit.LoadOneTableComplete();
+end
+
+function LanguageDBModel.GetList()
+    return languageTable;
+end
+
+function LanguageDBModel.GetEntity(id)
+    local ret = nil;
+    for i = 1, #languageTable, 1 do
+        if (languageTable[i].Id == id) then
+            ret = languageTable[i];
+            break;
+        end
+    end
+    return ret;
+end

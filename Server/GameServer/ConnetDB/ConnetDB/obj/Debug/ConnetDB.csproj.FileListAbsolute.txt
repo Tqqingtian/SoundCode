@@ -1,0 +1,11 @@
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\obj\Debug\ConnetDB.Properties.Resources.resources
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\obj\Debug\ConnetDB.csproj.GenerateResource.cache
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\obj\Debug\ConnetDB.csproj.CoreCompileInputs.cache
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\bin\Debug\ConnetDB.exe.config
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\bin\Debug\ConnetDB.exe
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\bin\Debug\ConnetDB.pdb
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\bin\Debug\Mmcoy.Framework.dll
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\bin\Debug\log4net.dll
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\obj\Debug\ConnetDB.csproj.CopyComplete
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\obj\Debug\ConnetDB.exe
+E:\WorldTheAutumn\SoundCode\Server\GameServer\ConnetDB\ConnetDB\obj\Debug\ConnetDB.pdb

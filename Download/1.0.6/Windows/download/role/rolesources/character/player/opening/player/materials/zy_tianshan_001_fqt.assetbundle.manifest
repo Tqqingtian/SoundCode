@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 3455326166
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f6e61b5e7aa234997f78fcb2339d3fe2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fe397485c3cec1106b49e9ff95e8f8a2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Opening/Player/Materials/Zy_tianshan_001_fqt.mat
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/tianshan_001/zy_tianshan_001_fqt/materials/zy_tianshan_001_fqt.assetbundle

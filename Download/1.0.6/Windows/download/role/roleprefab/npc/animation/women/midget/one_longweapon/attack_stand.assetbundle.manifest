@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 231181672
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 76f3e92301b3e0b96cad6b3342957062
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Women/Midget/One_LongWeapon/Attack_Stand.anim
+Dependencies: []

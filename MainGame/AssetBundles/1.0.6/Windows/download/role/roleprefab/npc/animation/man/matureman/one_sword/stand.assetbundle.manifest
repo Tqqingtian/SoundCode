@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 164584289
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9e3925652e64045678ca570048b56aca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Man/MatureMan/One_Sword/Stand.anim
+Dependencies: []

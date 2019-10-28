@@ -1,0 +1,59 @@
+---@class System.Security.Claims.ClaimTypes : System.Object
+---@field public AuthenticationInstant string @static
+---@field public AuthenticationMethod string @static
+---@field public CookiePath string @static
+---@field public DenyOnlyPrimarySid string @static
+---@field public DenyOnlyPrimaryGroupSid string @static
+---@field public DenyOnlyWindowsDeviceGroup string @static
+---@field public Dsa string @static
+---@field public Expiration string @static
+---@field public Expired string @static
+---@field public GroupSid string @static
+---@field public IsPersistent string @static
+---@field public PrimaryGroupSid string @static
+---@field public PrimarySid string @static
+---@field public Role string @static
+---@field public SerialNumber string @static
+---@field public UserData string @static
+---@field public Version string @static
+---@field public WindowsAccountName string @static
+---@field public WindowsDeviceClaim string @static
+---@field public WindowsDeviceGroup string @static
+---@field public WindowsUserClaim string @static
+---@field public WindowsFqbnVersion string @static
+---@field public WindowsSubAuthority string @static
+---@field public Anonymous string @static
+---@field public Authentication string @static
+---@field public AuthorizationDecision string @static
+---@field public Country string @static
+---@field public DateOfBirth string @static
+---@field public Dns string @static
+---@field public DenyOnlySid string @static
+---@field public Email string @static
+---@field public Gender string @static
+---@field public GivenName string @static
+---@field public Hash string @static
+---@field public HomePhone string @static
+---@field public Locality string @static
+---@field public MobilePhone string @static
+---@field public Name string @static
+---@field public NameIdentifier string @static
+---@field public OtherPhone string @static
+---@field public PostalCode string @static
+---@field public Rsa string @static
+---@field public Sid string @static
+---@field public Spn string @static
+---@field public StateOrProvince string @static
+---@field public StreetAddress string @static
+---@field public Surname string @static
+---@field public System string @static
+---@field public Thumbprint string @static
+---@field public Upn string @static
+---@field public Uri string @static
+---@field public Webpage string @static
+---@field public X500DistinguishedName string @static
+---@field public Actor string @static
+local m = {}
+
+System.Security.Claims.ClaimTypes = m
+return m

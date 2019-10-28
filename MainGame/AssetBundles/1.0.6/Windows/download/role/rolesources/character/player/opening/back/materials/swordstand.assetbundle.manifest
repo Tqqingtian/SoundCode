@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 702297649
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 811c5656c88f58656f5c220c1a587b77
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fe397485c3cec1106b49e9ff95e8f8a2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Opening/Back/Materials/swordstand.mat
+- Assets/Download/Role/RoleSources/Character/Player/Opening/Back/Materials/swordstand.png
+Dependencies: []

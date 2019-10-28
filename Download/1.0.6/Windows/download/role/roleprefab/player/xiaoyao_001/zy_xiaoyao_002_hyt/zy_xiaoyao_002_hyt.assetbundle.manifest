@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3427920820
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 72c3c69392964d6e774f215d8e79c6a9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Xiaoyao_001/Zy_xiaoyao_002_hyt/Zy_xiaoyao_002_hyt.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/xiaoyao_001/zy_xiaoyao_001_hyt/materials/zy_xiaoyao_002_hyt.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/xiaoyao_001/zy_xiaoyao_001_hyt/zy_xiaoyao_001_hyt.assetbundle

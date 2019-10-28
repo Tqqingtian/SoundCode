@@ -1,0 +1,30 @@
+UI_LogOnCtrl ={};
+
+local this=UI_LogOnCtrl;
+--初始化
+function UI_LogOnCtrl.OnInit(userData)
+    print('UI_LogOnCtrl.OnInit');
+
+end
+--打开时
+function UI_LogOnCtrl.OnOpen(userData)
+    print('OnOpen')
+
+end
+--打开登录界面
+function UI_LogOnCtrl.OnOpenLonOnView(userData)
+
+
+end
+
+
+
+--关闭时
+function UI_LogOnCtrl.OnClose()
+    GameEntry.UI:CloseUIForm(UIFormId.LogOn);
+
+end
+
+function UI_LogOnCtrl.OnBeforDestry()
+    print('OnBeforDestry')
+end

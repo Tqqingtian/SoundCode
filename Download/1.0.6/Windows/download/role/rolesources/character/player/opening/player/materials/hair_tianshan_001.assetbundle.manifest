@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3146099304
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a6895f7b663bd1a7cbccc8f89d665b7b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9b71393b2ee9cb5c4f2e835e78d3d8d4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Opening/Player/Materials/Hair_tianshan_001.mat
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/tianshan_001/cloth_001_tianshan_001_004/materials/hair_tianshan_004.assetbundle

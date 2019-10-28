@@ -1,0 +1,42 @@
+---@class System.Reflection.CorElementType : System.Enum
+---@field public End System.Reflection.CorElementType @static
+---@field public Void System.Reflection.CorElementType @static
+---@field public Boolean System.Reflection.CorElementType @static
+---@field public Char System.Reflection.CorElementType @static
+---@field public I1 System.Reflection.CorElementType @static
+---@field public U1 System.Reflection.CorElementType @static
+---@field public I2 System.Reflection.CorElementType @static
+---@field public U2 System.Reflection.CorElementType @static
+---@field public I4 System.Reflection.CorElementType @static
+---@field public U4 System.Reflection.CorElementType @static
+---@field public I8 System.Reflection.CorElementType @static
+---@field public U8 System.Reflection.CorElementType @static
+---@field public R4 System.Reflection.CorElementType @static
+---@field public R8 System.Reflection.CorElementType @static
+---@field public String System.Reflection.CorElementType @static
+---@field public Ptr System.Reflection.CorElementType @static
+---@field public ByRef System.Reflection.CorElementType @static
+---@field public ValueType System.Reflection.CorElementType @static
+---@field public Class System.Reflection.CorElementType @static
+---@field public Var System.Reflection.CorElementType @static
+---@field public Array System.Reflection.CorElementType @static
+---@field public GenericInst System.Reflection.CorElementType @static
+---@field public TypedByRef System.Reflection.CorElementType @static
+---@field public I System.Reflection.CorElementType @static
+---@field public U System.Reflection.CorElementType @static
+---@field public FnPtr System.Reflection.CorElementType @static
+---@field public Object System.Reflection.CorElementType @static
+---@field public SzArray System.Reflection.CorElementType @static
+---@field public MVar System.Reflection.CorElementType @static
+---@field public CModReqd System.Reflection.CorElementType @static
+---@field public CModOpt System.Reflection.CorElementType @static
+---@field public Internal System.Reflection.CorElementType @static
+---@field public Max System.Reflection.CorElementType @static
+---@field public Modifier System.Reflection.CorElementType @static
+---@field public Sentinel System.Reflection.CorElementType @static
+---@field public Pinned System.Reflection.CorElementType @static
+---@field public value__ number
+local m = {}
+
+System.Reflection.CorElementType = m
+return m

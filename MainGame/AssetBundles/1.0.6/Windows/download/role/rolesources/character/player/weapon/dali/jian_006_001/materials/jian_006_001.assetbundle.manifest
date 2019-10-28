@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 3133835203
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 97c5273c27cb87a88c0fb74b6018edcb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fe397485c3cec1106b49e9ff95e8f8a2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Weapon/Dali/Jian_006_001/Materials/Jian_006_001.jpg
+- Assets/Download/Role/RoleSources/Character/Player/Weapon/Dali/Jian_006_001/Materials/Jian_006_001.mat
+Dependencies: []

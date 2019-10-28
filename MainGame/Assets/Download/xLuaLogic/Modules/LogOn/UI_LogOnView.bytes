@@ -1,0 +1,76 @@
+UI_LogOnView = { };
+local this = UI_LogOnView;
+
+local txtAccountIndex = 0;
+local txtPwdIndex = 1;
+local btnRegisterIndex = 2;
+local btnLogOnIndex = 3;
+local inputPwdIndex = 4;
+local inputAccountIndex = 5;
+
+
+function UI_LogOnView.OnInit(transform, userData)
+    this.InitView(transform);
+    UI_LogOnCtrl.OnInit(userData);
+end
+
+function UI_LogOnView.InitView(transform)
+    this.LuaForm = transform:GetComponent(typeof(CS.TQ.LuaForm));
+    this.txtAccount = this.LuaForm:GetLuaComs(txtAccountIndex);
+    this.txtPwd = this.LuaForm:GetLuaComs(txtPwdIndex);
+    this.btnRegister = this.LuaForm:GetLuaComs(btnRegisterIndex);
+    this.btnLogOn = this.LuaForm:GetLuaComs(btnLogOnIndex):GetComponent("Button").onClick:AddListener(this.ToLogOn);
+    this.inputPwd = this.LuaForm:GetLuaComs(inputPwdIndex);
+    this.inputAccount = this.LuaForm:GetLuaComs(inputAccountIndex);
+    this.inputAccount.text = CS.UnityEngine.PlayerPrefs.GetString("Account");
+    this.inputPwd.text = CS.UnityEngine.PlayerPrefs.GetString("Pwd");
+end
+function UI_LogOnView.ToLogOn()
+    if this.inputPwd.text ~= "" and this.inputPwd.text ~= "" then
+        local url = GameEntry.Http.ReadAccountUrl.."/api/account";
+        dic = {};
+        dic["Type"] = 1;
+        dic["UserName"] = this.inputAccount.text;
+        dic["Pwd"] = this.inputPwd.text;
+        dic["ChannelId"] = 0;
+        GameEntry.Http:SendData(url,this.OnWebAccountAccount,true,false,dic);
+        dic = nil;
+    else
+        print('请输入账号密码')
+    end
+
+end
+--账号回调
+function UI_LogOnView.OnWebAccountAccount(userData)
+    if userData.HasError == false then
+        print("登录成功"..userData.Value)
+        CS.UnityEngine.PlayerPrefs.SetString("Account",this.inputAccount.text);
+        CS.UnityEngine.PlayerPrefs.SetString("Pwd",this.inputPwd.text);
+        GameEntry.UI:OpenUIForm(UIFormId.SelectAreaClothing,this.inputAccount.text);
+        this.OnClose();
+    else
+        print("登录失败"..userData.Value)
+    end
+end
+
+
+
+function UI_LogOnView.OnOpen(userData)
+    UI_LogOnCtrl.OnOpen(userData);
+end
+--关闭UI时
+function UI_LogOnView.OnClose()
+    UI_LogOnCtrl.OnClose();
+    GameEntry.UI:CloseUIForm(UIFormId.LogOn);
+end
+
+function UI_LogOnView.OnBeforDestroy()
+    UI_LogOnCtrl.OnBeforDestroy();
+    this.LuaForm = nil;
+    this.txtAccount = nil;
+    this.txtPwdIndex = nil;
+    this.btnRegisterIndex = nil;
+    this.btnLogOnIndex = nil;
+    this.inputPwdIndex = nil;
+    this.inputAccountIndex = nil;
+end

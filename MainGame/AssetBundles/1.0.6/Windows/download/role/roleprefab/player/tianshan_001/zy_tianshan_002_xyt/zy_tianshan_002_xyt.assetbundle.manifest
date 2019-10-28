@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3567157605
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 04cee4f10a4366dddb6b1b5bc51c9bee
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Tianshan_001/Zy_tianshan_002_xyt/Zy_tianshan_002_xyt.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/tianshan_001/zy_tianshan_001_xyt/materials/zy_tianshan_002_xyt.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/tianshan_001/zy_tianshan_001_xyt/zy_tianshan_001_xyt.assetbundle

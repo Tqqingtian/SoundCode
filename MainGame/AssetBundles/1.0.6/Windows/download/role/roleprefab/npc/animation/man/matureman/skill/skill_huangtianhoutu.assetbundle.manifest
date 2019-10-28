@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 472735969
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8720e50de1c3c3b081e94b8d0c1be140
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Man/MatureMan/Skill/Skill_Huangtianhoutu.anim
+Dependencies: []

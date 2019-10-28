@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2403518721
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ddb9393e2b15ad526ea45a5faa565095
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fe397485c3cec1106b49e9ff95e8f8a2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Loli/Materials/Face_001_xiaoyaonv_1.mat
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/loli/face_001_xiaoyaonv_001.assetbundle

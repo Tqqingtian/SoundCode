@@ -1,0 +1,8 @@
+--服务器返回登录信息（工具只生成一次）
+RoleOperation_LogOnGameServerReturnHandler = { };
+
+local this = RoleOperation_LogOnGameServerReturnHandler;
+
+function RoleOperation_LogOnGameServerReturnHandler.OnRoleOperation_LogOnGameServerReturn(buffer)
+    local proto = RoleOperation_LogOnGameServerReturnProto.GetProto(buffer);
+end

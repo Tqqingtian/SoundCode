@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1575486765
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e2182e67385d80c62608d666d09487ff
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Dali_001/Fastrun_Right.anim
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3160361539
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5adeb50fcc1b1f9f1d8cf897c71ab6f9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Animal/Fox/Attack.anim
+Dependencies: []

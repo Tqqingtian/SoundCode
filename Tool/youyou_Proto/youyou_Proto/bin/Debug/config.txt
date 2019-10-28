@@ -1,0 +1,5 @@
+E:\WorldTheAutumn\SoundCode\MainGame\Assets\TQScript\Proto
+E:\WorldTheAutumn\SoundCode\MainGame\Assets\TQScript\ProtoHandler
+E:\WorldTheAutumn\SoundCode\MainGame\Assets\Download\xLuaLogic\DataNode\Proto
+E:\WorldTheAutumn\SoundCode\MainGame\Assets\Download\xLuaLogic\DataNode\ProtoHandler
+E:\WorldTheAutumn\SoundCode\Server\GameServer\GameServerApp\GameServerApp\Proto

@@ -1,0 +1,44 @@
+---@class System.TermInfoBooleans : System.Enum
+---@field public AutoLeftMargin System.TermInfoBooleans @static
+---@field public AutoRightMargin System.TermInfoBooleans @static
+---@field public NoEscCtlc System.TermInfoBooleans @static
+---@field public CeolStandoutGlitch System.TermInfoBooleans @static
+---@field public EatNewlineGlitch System.TermInfoBooleans @static
+---@field public EraseOverstrike System.TermInfoBooleans @static
+---@field public GenericType System.TermInfoBooleans @static
+---@field public HardCopy System.TermInfoBooleans @static
+---@field public HasMetaKey System.TermInfoBooleans @static
+---@field public HasStatusLine System.TermInfoBooleans @static
+---@field public InsertNullGlitch System.TermInfoBooleans @static
+---@field public MemoryAbove System.TermInfoBooleans @static
+---@field public MemoryBelow System.TermInfoBooleans @static
+---@field public MoveInsertMode System.TermInfoBooleans @static
+---@field public MoveStandoutMode System.TermInfoBooleans @static
+---@field public OverStrike System.TermInfoBooleans @static
+---@field public StatusLineEscOk System.TermInfoBooleans @static
+---@field public DestTabsMagicSmso System.TermInfoBooleans @static
+---@field public TildeGlitch System.TermInfoBooleans @static
+---@field public TransparentUnderline System.TermInfoBooleans @static
+---@field public XonXoff System.TermInfoBooleans @static
+---@field public NeedsXonXoff System.TermInfoBooleans @static
+---@field public PrtrSilent System.TermInfoBooleans @static
+---@field public HardCursor System.TermInfoBooleans @static
+---@field public NonRevRmcup System.TermInfoBooleans @static
+---@field public NoPadChar System.TermInfoBooleans @static
+---@field public NonDestScrollRegion System.TermInfoBooleans @static
+---@field public CanChange System.TermInfoBooleans @static
+---@field public BackColorErase System.TermInfoBooleans @static
+---@field public HueLightnessSaturation System.TermInfoBooleans @static
+---@field public ColAddrGlitch System.TermInfoBooleans @static
+---@field public CrCancelsMicroMode System.TermInfoBooleans @static
+---@field public HasPrintWheel System.TermInfoBooleans @static
+---@field public RowAddrGlitch System.TermInfoBooleans @static
+---@field public SemiAutoRightMargin System.TermInfoBooleans @static
+---@field public CpiChangesRes System.TermInfoBooleans @static
+---@field public LpiChangesRes System.TermInfoBooleans @static
+---@field public Last System.TermInfoBooleans @static
+---@field public value__ number
+local m = {}
+
+System.TermInfoBooleans = m
+return m

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 335751015
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f2c82201981db8d64f9b093ffcf2706c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Animal/Frog/Knockback_01.anim
+Dependencies: []

@@ -1,0 +1,54 @@
+---@class UnityEngine.iOS.DeviceGeneration : System.Enum
+---@field public Unknown UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone3G UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone3GS UnityEngine.iOS.DeviceGeneration @static
+---@field public iPodTouch1Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPodTouch2Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPodTouch3Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPad1Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone4 UnityEngine.iOS.DeviceGeneration @static
+---@field public iPodTouch4Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPad2Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone4S UnityEngine.iOS.DeviceGeneration @static
+---@field public iPad3Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone5 UnityEngine.iOS.DeviceGeneration @static
+---@field public iPodTouch5Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadMini1Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPad4Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone5C UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone5S UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadAir1 UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadMini2Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone6 UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone6Plus UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadMini3Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadAir2 UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone6S UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone6SPlus UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadPro1Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadMini4Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhoneSE1Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadPro10Inch1Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone7 UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone7Plus UnityEngine.iOS.DeviceGeneration @static
+---@field public iPodTouch6Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPad5Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadPro2Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadPro10Inch2Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone8 UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhone8Plus UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhoneX UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhoneXS UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhoneXSMax UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhoneXR UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadPro11Inch UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadPro3Gen UnityEngine.iOS.DeviceGeneration @static
+---@field public iPhoneUnknown UnityEngine.iOS.DeviceGeneration @static
+---@field public iPadUnknown UnityEngine.iOS.DeviceGeneration @static
+---@field public iPodTouchUnknown UnityEngine.iOS.DeviceGeneration @static
+---@field public value__ number
+local m = {}
+
+UnityEngine.iOS.DeviceGeneration = m
+return m

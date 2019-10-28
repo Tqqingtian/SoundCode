@@ -1,0 +1,19 @@
+2018-06-06 13:44:01,643 [10] ERROR WebAccount.Controllers.api.WeixinRechargeController - 收到xml数据
+2018-06-06 13:44:01,655 [10] ERROR WebAccount.Controllers.api.WeixinRechargeController - <xml><appid><![CDATA[wx86e63d040cbc2340]]></appid>
+<attach><![CDATA[0_4035_38_1032_3001_20180606134355409]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1503596641]]></mch_id>
+<nonce_str><![CDATA[17394]]></nonce_str>
+<openid><![CDATA[od5lM1ZXEz2USy_G2mlWF2hlirSY]]></openid>
+<out_trade_no><![CDATA[20180606134355410]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[362479A47A0EB7E9EFDCFB390AB31C6A]]></sign>
+<time_end><![CDATA[20180606134400]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[APP]]></trade_type>
+<transaction_id><![CDATA[4200000124201806067102608793]]></transaction_id>
+</xml>

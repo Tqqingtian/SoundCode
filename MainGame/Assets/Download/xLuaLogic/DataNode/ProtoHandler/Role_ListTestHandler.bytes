@@ -1,0 +1,8 @@
+--角色列表测试（工具只生成一次）
+Role_ListTestHandler = { };
+
+local this = Role_ListTestHandler;
+
+function Role_ListTestHandler.OnRole_ListTest(buffer)
+    local proto = Role_ListTestProto.GetProto(buffer);
+end

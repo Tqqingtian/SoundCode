@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 467677211
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 17a14c9342ea5fef1ec1ef16d4193fae
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1045d848d788518dca10a43c9938a6a5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Scenes/GameScene_HuPaoCun_03.unity
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/cusshaders.assetbundle

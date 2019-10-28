@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4126072473
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cbd072106729d64da813dfd1986f0436
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Animal/Bear/Knockback_02.anim
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4103636587
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a902df72691990f38cc9d52c4374ee6d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Women/MatureFemale/Magic/Stand.anim
+Dependencies: []

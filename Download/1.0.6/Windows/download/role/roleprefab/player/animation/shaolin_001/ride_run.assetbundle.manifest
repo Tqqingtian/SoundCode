@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1674223542
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 44e1f5e6f87c41c0af3b7c2cee1e23c7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Shaolin_001/Ride_Run.anim
+Dependencies: []

@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 268215372
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4030d9b5c03702554c4b4ed05ad07bd6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Man/Fat/No_Weapon/Npc_001_baobutong_002.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/fat/no_weapon/npc_001_baobutong_001/materials/npc_001_baobutong_002.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/fat/no_weapon/npc_001_baobutong_001/npc_001_baobutong_001.assetbundle

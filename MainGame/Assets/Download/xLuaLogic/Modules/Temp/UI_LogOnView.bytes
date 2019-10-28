@@ -1,0 +1,42 @@
+UI_LogOnView = { };
+local this = UI_LogOnView;
+
+local txtAccountIndex = 0;
+local txtPwdIndex = 1;
+local btnRegisterIndex = 2;
+local btnLogOnIndex = 3;
+local inputPwdIndex = 4;
+local inputAccountIndex = 5;
+
+function UI_LogOnView.OnInit(transform, userData)
+    this.InitView(transform);
+    UI_LogOnCtrl.OnInit(userData);
+end
+
+function UI_LogOnView.InitView(transform)
+    this.LuaForm = transform:GetComponent(typeof(CS.TQ.LuaForm));
+    this.txtAccount = this.LuaForm:GetLuaComs(txtAccountIndex);
+    this.txtPwd = this.LuaForm:GetLuaComs(txtPwdIndex);
+    this.btnRegister = this.LuaForm:GetLuaComs(btnRegisterIndex);
+    this.btnLogOn = this.LuaForm:GetLuaComs(btnLogOnIndex);
+    this.inputPwd = this.LuaForm:GetLuaComs(inputPwdIndex);
+    this.inputAccount = this.LuaForm:GetLuaComs(inputAccountIndex);
+end
+
+function UI_LogOnView.OnOpen(userData)
+    UI_LogOnCtrl.OnOpen(userData);
+end
+
+function UI_LogOnView.OnClose()
+    UI_LogOnCtrl.OnClose();
+end
+
+function UI_LogOnView.OnBeforDestroy()
+    UI_LogOnCtrl.OnBeforDestroy();
+    txtAccountIndex = nil;
+    txtPwdIndex = nil;
+    btnRegisterIndex = nil;
+    btnLogOnIndex = nil;
+    inputPwdIndex = nil;
+    inputAccountIndex = nil;
+end

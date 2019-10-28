@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1804589857
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1a4fa19057a1005adcbb26956a532bc9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Xiaoyao_001/Skill_Xp_Huitianmiedi_Loop.anim
+Dependencies: []

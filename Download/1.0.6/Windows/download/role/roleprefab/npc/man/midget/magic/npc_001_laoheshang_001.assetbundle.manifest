@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3482502601
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f2a306d538d56901a12c304ef70f2c46
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Man/Midget/Magic/Npc_001_laoheshang_001.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/midget/magic/npc_001_laoheshang_001/materials/npc_001_laoheshang_001.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/midget/magic/npc_001_laoheshang_001/npc_001_laoheshang_001.assetbundle

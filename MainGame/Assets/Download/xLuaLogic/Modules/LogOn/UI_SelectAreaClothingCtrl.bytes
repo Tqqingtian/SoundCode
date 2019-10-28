@@ -1,0 +1,146 @@
+UI_SelectAreaClothingCtrl ={};
+
+local this=UI_SelectAreaClothingCtrl;
+
+local txtServerNameTable;
+local imgStatusTable;
+local btnServerTable;
+
+function UI_SelectAreaClothingCtrl.OnInit(userData)
+    txtServerNameTable = {};
+    imgStatusTable = {};
+    btnServerTable = {};
+end
+
+function UI_SelectAreaClothingCtrl.InitView(userData)
+    print('打开的区服列表时候监听')
+    this.dic = {};
+    this.dic["Type"] = 1;
+    --0是获取最新的区服
+    this.dic["pageIndex"] = 1;
+    this.dic["ChannelId"] = 0;--渠道号0是没有的意思
+    this.dic["InnerVersion"] = 1001;
+    print(HttpURL.."/api/Gameserver");
+    GameEntry.Http:SendData(HttpURL.."/api/Gameserver", this.OnSelectAreaClothing, true, true, this.dic);
+    --回调
+    UI_SelectAreaClothingView.multiScroller.OnItemCreate = this.OnItemCreate;
+end
+local lst ={}
+--点击选择区服（获取）
+function UI_SelectAreaClothingCtrl.OnSelectAreaClothing(args)
+    print(args.Value);
+    if args.HasError then
+    else
+        lst = json.decode(args.Value)
+        local leng=0
+        --设置 游戏服务器 用一次就要出现一次
+        for i,w in ipairs(lst) do
+            leng=leng+1;
+            --print(i)
+            --print("数量:"..w.Name)
+        end
+        --print("数量:"..leng)
+        UI_SelectAreaClothingView.multiScroller.DataCount = #lst;
+        UI_SelectAreaClothingView.multiScroller:ResetScroller();
+
+        local currSelectServerName = PlayerPrefs.GetString("CurrSelectServerName");
+        if currSelectServerName ~= nil then
+            UI_SelectAreaClothingView.txtCurrSelect.text = currSelectServerName;
+            UI_SelectAreaClothingView.btnSelect:GetComponent("UnityEngine.UI.Button").onClick:AddListener(
+                    function ()
+                        this.SendConnectSocket(
+                                PlayerPrefs.GetString("CurrSelectServerIp"),
+                                PlayerPrefs.GetString("CurrSelectServerPort"),currSelectServerName);
+                        print(currSelectServerName);
+                    end
+            );
+
+        end
+        UI_SelectAreaClothingView.btnSelect:GetComponent("UnityEngine.UI.Button").onClick:AddListener(
+           function()
+               if currSelectServer ~= nil then
+                   local CurrSelectServerIp = CS.UnityEngine.PlayerPrefs.GetString("CurrSelectServerIp");
+                   local CurrSelectServerPort = CS.UnityEngine.PlayerPrefs.GetString("CurrSelectServerPort");
+                   this.SendConnectSocket(CurrSelectServerIp,CurrSelectServerPort,currSelectServerName);
+               end
+           end
+        );
+
+    end
+end
+
+function UI_SelectAreaClothingCtrl.OnItemCreate(index,obj)
+    local instanceId = obj:GetInstanceID();
+    local txtServerName;
+    local imgServerStatus;
+    local btnServer;
+    if txtServerNameTable[instanceId] ~= nil then
+        txtServerName = txtServerNameTable[instanceId];
+    else
+        txtServerName = obj.transform:Find("txtName"):GetComponent("UnityEngine.UI.Text");
+        txtServerNameTable[instanceId] = txtServerName;
+    end
+
+    if imgStatusTable[instanceId]~=nil then
+        imgServerStatus = imgStatusTable[instanceId];
+    else
+        imgServerStatus = obj.transform:Find("txtName"):GetComponent("UnityEngine.UI.Image");
+        imgStatusTable[instanceId] = imgServerStatus;
+    end
+    if btnServerTable[instanceId]~=nil then
+        btnServer = btnServerTable[instanceId];
+    else
+        btnServer = obj.transform:Find("btnSelect"):GetComponent("UnityEngine.UI.Button");
+        btnServerTable[instanceId] = btnServer;
+    end
+    print("区服"..lst[index+1].Name)
+    --print("i==="..index)
+    --print(lst[1].Name)
+    txtServerName.text = "区服"..lst[index+1].Name;
+    --print(txtServerName.transform.parent)
+
+    btnServer.onClick:RemoveAllListeners();
+    btnServer.onClick:AddListener(
+      function()
+          print("被点了".."区服"..lst[index+1].Name);
+          this.SendConnectSocket(lst[index+1].Ip,lst[index+1].Port,lst[index+1].Name)
+      end
+    );
+
+    txtServerName =nil;
+    btnServer =nil;
+    imgServerStatus =nil;
+end
+
+function UI_SelectAreaClothingCtrl.SendConnectSocket(ip,port,serverName)
+    GameEntry.Socket:ConnerToMainSocket(ip,port);
+    CS.UnityEngine.PlayerPrefs.SetString("CurrSelectServerIp",ip);
+    CS.UnityEngine.PlayerPrefs.SetString("CurrSelectServerPort",port);
+    CS.UnityEngine.PlayerPrefs.SetString("CurrSelectServerName",serverName);
+    print(serverName.."进入角色列表 返回角色")
+    GameEntry.UI:OpenUIForm(UIFormId.SelectRole);
+    GameEntry.UI:CloseUIForm(UIFormId.SelectAreaClothing);
+
+end
+
+function UI_SelectAreaClothingCtrl.OnOpen(userData)
+
+end
+
+
+function UI_SelectAreaClothingCtrl.OnClose()
+
+end
+
+function UI_SelectAreaClothingCtrl.OnBeforDestroy()
+    for key,v in ipairs(txtServerNameTable) do
+        txtServerNameTable[key] = nil;
+    end
+
+    for key,v in ipairs(imgStatusTable) do
+        imgStatusTable[key] = nil;
+    end
+    for key,v in ipairs(btnServerTable) do
+        btnServerTable[key] = nil;
+    end
+end

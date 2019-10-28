@@ -1,0 +1,44 @@
+--数据访问
+ShopDBModel = { }
+
+local this = ShopDBModel;
+
+local shopTable = { }; --定义表格
+
+function ShopDBModel.LoadList()
+    GameInit.AddTotalLoadTableCount();
+    CS.TQ.GameEntry.Lua:LoadDataTable("Shop",this.LoadFormMS);
+end
+
+function ShopDBModel.LoadFormMS(ms)
+    local rows=ms:ReadInt();
+    ms:ReadInt();
+
+for i = 0, rows, 1 do
+        shopTable[#shopTable + 1] = ShopEntity.New(
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt(),
+                ms:ReadInt()
+        );
+    end
+GameInit.LoadOneTableComplete();
+end
+
+function ShopDBModel.GetList()
+    return shopTable;
+end
+
+function ShopDBModel.GetEntity(id)
+    local ret = nil;
+    for i = 1, #shopTable, 1 do
+        if (shopTable[i].Id == id) then
+            ret = shopTable[i];
+            break;
+        end
+    end
+    return ret;
+end

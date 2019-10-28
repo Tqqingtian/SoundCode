@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3289515900
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 11b9472c388866f6a04a77d7a025eb07
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Shaolin_001/Attack_02.anim
+Dependencies: []

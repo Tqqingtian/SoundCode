@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3389378828
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b5c5c666d7bbabef6c6ce6ae68b46c95
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9b71393b2ee9cb5c4f2e835e78d3d8d4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Man/MatureMan/No_Weapon/Npc_001_jiumozhi_001/Materials/Npc_001_jiumozhi_001_boss.mat
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/matureman/no_weapon/npc_001_jiumozhi_001/materials/npc_001_jiumozhi_001.assetbundle

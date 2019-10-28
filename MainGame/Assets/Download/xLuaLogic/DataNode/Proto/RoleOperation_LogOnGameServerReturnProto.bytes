@@ -1,0 +1,96 @@
+--服务器返回登录信息
+RoleOperation_LogOnGameServerReturnProto = { ProtoCode = 10002, RoleCount = 0, RoleTable = { } }
+local this = RoleOperation_LogOnGameServerReturnProto;
+
+RoleOperation_LogOnGameServerReturnProto.__index = RoleOperation_LogOnGameServerReturnProto;
+
+function RoleOperation_LogOnGameServerReturnProto.New()
+    local self = { };
+    setmetatable(self, RoleOperation_LogOnGameServerReturnProto);
+    return self;
+end
+
+function RoleOperation_LogOnGameServerReturnProto.GetProtoName()
+    return "RoleOperation_LogOnGameServerReturn";
+end
+
+
+--定义角色项
+Role = { RoleId = 0, RoleNickName = "", RoleJob = 0, RoleLevel = 0 }
+Role.__index = Role;
+function Role.New()
+    local self = { };
+    setmetatable(self, Role);
+    return self;
+end
+
+
+--发送协议
+function RoleOperation_LogOnGameServerReturnProto.SendProto(proto, isChild)
+
+    local ms = nil;
+
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Socket.SocketSendMS;
+        ms:SetLength(0);
+        ms:WriteUShort(proto.ProtoCode);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStream();
+        ms.SetLength(0);
+    end
+
+    ms:WriteInt(proto.RoleCount);
+    for i = 1, proto.RoleCount, 1 do
+        local item = proto.RoleTable[i];
+        ms:WriteInt(item.RoleId);
+        ms:WriteUTF8String(item.RoleNickName);
+        ms:WriteByte(item.RoleJob);
+        ms:WriteInt(item.RoleLevel);
+    end
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>发送消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+
+        CS.TQ.GameEntry.Socket:SendMsg(ms:ToArray());
+    else
+        local retBuffer = ms:ToArray();
+        CS.TQ.GameEntry.Lua:EnqueueMemoryStream(ms);
+        return retBuffer;
+    end
+end
+
+
+--解析协议
+function RoleOperation_LogOnGameServerReturnProto.GetProto(buffer, isChild)
+
+    local proto = RoleOperation_LogOnGameServerReturnProto.New(); --实例化一个协议对象
+    local ms = nil;
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Lua:LoadSocketReceiveMS(buffer);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStreamAndLoadBuffer(buffer);
+    end
+
+    proto.RoleCount = ms:ReadInt();
+	proto.RoleTable = {};
+    for i = 1, proto.RoleCount, 1 do
+        local _Role = Role.New();
+        _Role.RoleId = ms:ReadInt();
+        _Role.RoleNickName = ms:ReadUTF8String();
+        _Role.RoleJob = ms:ReadByte();
+        _Role.RoleLevel = ms:ReadInt();
+        proto.RoleTable[#proto.RoleTable+1] = _Role;
+    end
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>接收消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+    end
+
+    return proto;
+end

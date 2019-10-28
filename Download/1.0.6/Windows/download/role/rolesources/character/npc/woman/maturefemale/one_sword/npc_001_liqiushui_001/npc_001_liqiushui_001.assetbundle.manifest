@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 362505493
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b6409759a2273cf2328b949404771c31
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Woman/MatureFemale/One_Sword/Npc_001_liqiushui_001/Npc_001_liqiushui_001.FBX
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/woman/maturefemale/one_sword/npc_001_liqiushui_001/materials/npc_001_liqiushui_001.assetbundle

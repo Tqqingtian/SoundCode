@@ -1,0 +1,27 @@
+JobEntity = { Id = 0, Name = "", Desc = "", JobPrefab = "", HP = 0, MP = 0, ToSpeed = 0, WeaponDamageMin = 0, WeaponDamageMax = 0, AttackNumber = 0, StrikePower = 0, PiercingPower = 0, MagicPower = 0, ChoppingDefense = 0, PuncturDefense = 0, MagicDefense = 0 }
+
+JobEntity.__index = JobEntity;
+
+function JobEntity.New(Id, Name, Desc, JobPrefab, HP, MP, ToSpeed, WeaponDamageMin, WeaponDamageMax, AttackNumber, StrikePower, PiercingPower, MagicPower, ChoppingDefense, PuncturDefense, MagicDefense)
+    local self = { };
+    setmetatable(self, JobEntity);
+
+    self.Id = Id;
+    self.Name = Name;
+    self.Desc = Desc;
+    self.JobPrefab = JobPrefab;
+    self.HP = HP;
+    self.MP = MP;
+    self.ToSpeed = ToSpeed;
+    self.WeaponDamageMin = WeaponDamageMin;
+    self.WeaponDamageMax = WeaponDamageMax;
+    self.AttackNumber = AttackNumber;
+    self.StrikePower = StrikePower;
+    self.PiercingPower = PiercingPower;
+    self.MagicPower = MagicPower;
+    self.ChoppingDefense = ChoppingDefense;
+    self.PuncturDefense = PuncturDefense;
+    self.MagicDefense = MagicDefense;
+
+    return self;
+end

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2090415314
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8f9741113911165294e14d1d62c0d1c8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Dali_001/Dead.anim
+Dependencies: []

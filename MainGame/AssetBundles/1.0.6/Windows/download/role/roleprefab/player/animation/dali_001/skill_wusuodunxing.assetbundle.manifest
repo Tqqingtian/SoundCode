@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1158316552
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 62c9c1eb181a16a81341f0d3cb77a213
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Dali_001/Skill_Wusuodunxing.anim
+Dependencies: []

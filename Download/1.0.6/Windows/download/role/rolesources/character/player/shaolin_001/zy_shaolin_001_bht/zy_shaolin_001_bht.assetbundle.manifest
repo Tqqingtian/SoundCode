@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 1949942792
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ef1e7de699ee0470280b2bc0417e0a0f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Shaolin_001/Zy_shaolin_001_bht/Zy_shaolin_001_bht.FBX
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/shaolin_001/zy_shaolin_001_bht/materials/zy_shaolin_001_bht.assetbundle

@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 407558762
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1f5fecf229022b1db4af3b90b98ebfb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fe397485c3cec1106b49e9ff95e8f8a2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Animal/Duck/Npc_001_xiaohuangya_001/Materials/Npc_001_xiaohuangya_001.mat
+- Assets/Download/Role/RoleSources/Character/Npc/Animal/Duck/Npc_001_xiaohuangya_001/Materials/Npc_001_xiaohuangya_001.jpg
+Dependencies: []

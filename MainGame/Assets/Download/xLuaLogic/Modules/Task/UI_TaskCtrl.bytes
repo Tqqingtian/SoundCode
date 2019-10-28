@@ -1,0 +1,32 @@
+UI_TaskCtrl ={};
+
+local this=UI_TaskCtrl;
+
+function UI_TaskCtrl.OnInit(userData)
+
+end
+
+function UI_TaskCtrl.OnOpen(userData)
+    UI_TaskView.txtTaskName.text="nidasfdsfas";
+    local rows=TaskDBModel.GetList();
+    for i = 1, #rows do
+        local entity=rows[i];
+        --print(entity.id);
+        --print(#entity.Name);
+        print(entity.Name);
+    end
+
+    local proto= Task_SearchTaskProto.New();
+    Task_SearchTaskProto.SendProto(proto);
+
+end
+
+function UI_TaskCtrl.OnClose()
+    print('关闭ui'..UIFormId.UI_Task)
+    GameEntry.UI:CloseUIForm(UIFormId.UI_Task);
+
+end
+
+function UI_TaskCtrl.OnBeforDestry()
+
+end

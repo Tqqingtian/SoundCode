@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1579856150
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a6ba2b8c2a7d565d8b8a5360fab5bfaa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Man/Strong/Twohand_LongWeapon/Run.anim
+Dependencies: []

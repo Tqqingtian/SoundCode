@@ -1,0 +1,16 @@
+function FileRead()
+    local file = io.open("E:/WorldTheAutumn/SoundCode/MainGame/Assets/Download/test.json","r")
+    local json = file:read("*a");
+    file:close()
+    return json
+end
+local file = FileRead()
+print(file)
+local json1 ={}
+json1 = json.decode(file)
+print(json1)
+for i,w in ipairs(json1) do
+    print("user:"..w.user)
+    print("password:"..w.password)
+end
+print("str:"..json1.str)

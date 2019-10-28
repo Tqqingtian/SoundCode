@@ -1,0 +1,6 @@
+Win
+PlayerPath?
+E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/scenes/gamescene_hupaocun_03.assetbundle
+SceneListBegin?
+Assets/Download/Scenes/GameScene_HuPaoCun_03.unity
+SceneListEnd?

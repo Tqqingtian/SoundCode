@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 2459869404
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: edfbdb256abe9ae8bcb06ce4f4e5d483
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Woman/MatureFemale/Magic/Npc_001_kangmin_001/Npc_001_kangmin_001.FBX
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/woman/maturefemale/magic/npc_001_kangmin_001/materials/npc_001_kangmin_001.assetbundle

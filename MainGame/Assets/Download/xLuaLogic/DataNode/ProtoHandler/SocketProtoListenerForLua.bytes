@@ -1,0 +1,17 @@
+--Socket协议监听（工具生成）
+
+SocketProtoListenerForLua = { };
+
+local this = SocketProtoListenerForLua;
+
+function SocketProtoListenerForLua.AddProtoListener()
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Role_ListTest, Role_ListTestHandler.OnRole_ListTest);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Task_SearchTaskReturn, Task_SearchTaskReturnHandler.OnTask_SearchTaskReturn);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Shop_BuyProductReturn, Shop_BuyProductReturnHandler.OnShop_BuyProductReturn);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Backpack_GoodsChangeReturn, Backpack_GoodsChangeReturnHandler.OnBackpack_GoodsChangeReturn);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Backpack_SearchReturn, Backpack_SearchReturnHandler.OnBackpack_SearchReturn);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Goods_SearchEquipDetailReturn, Goods_SearchEquipDetailReturnHandler.OnGoods_SearchEquipDetailReturn);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Goods_SellToSysReturn, Goods_SellToSysReturnHandler.OnGoods_SellToSysReturn);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Goods_UseItemReturn, Goods_UseItemReturnHandler.OnGoods_UseItemReturn);
+    CS.TQ.GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.Goods_EquipPutReturn, Goods_EquipPutReturnHandler.OnGoods_EquipPutReturn);
+end

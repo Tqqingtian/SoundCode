@@ -1,0 +1,53 @@
+---@class System.Environment.SpecialFolder : System.Enum
+---@field public MyDocuments System.Environment.SpecialFolder @static
+---@field public Desktop System.Environment.SpecialFolder @static
+---@field public MyComputer System.Environment.SpecialFolder @static
+---@field public Programs System.Environment.SpecialFolder @static
+---@field public Personal System.Environment.SpecialFolder @static
+---@field public Favorites System.Environment.SpecialFolder @static
+---@field public Startup System.Environment.SpecialFolder @static
+---@field public Recent System.Environment.SpecialFolder @static
+---@field public SendTo System.Environment.SpecialFolder @static
+---@field public StartMenu System.Environment.SpecialFolder @static
+---@field public MyMusic System.Environment.SpecialFolder @static
+---@field public DesktopDirectory System.Environment.SpecialFolder @static
+---@field public Templates System.Environment.SpecialFolder @static
+---@field public ApplicationData System.Environment.SpecialFolder @static
+---@field public LocalApplicationData System.Environment.SpecialFolder @static
+---@field public InternetCache System.Environment.SpecialFolder @static
+---@field public Cookies System.Environment.SpecialFolder @static
+---@field public History System.Environment.SpecialFolder @static
+---@field public CommonApplicationData System.Environment.SpecialFolder @static
+---@field public System System.Environment.SpecialFolder @static
+---@field public ProgramFiles System.Environment.SpecialFolder @static
+---@field public MyPictures System.Environment.SpecialFolder @static
+---@field public CommonProgramFiles System.Environment.SpecialFolder @static
+---@field public MyVideos System.Environment.SpecialFolder @static
+---@field public NetworkShortcuts System.Environment.SpecialFolder @static
+---@field public Fonts System.Environment.SpecialFolder @static
+---@field public CommonStartMenu System.Environment.SpecialFolder @static
+---@field public CommonPrograms System.Environment.SpecialFolder @static
+---@field public CommonStartup System.Environment.SpecialFolder @static
+---@field public CommonDesktopDirectory System.Environment.SpecialFolder @static
+---@field public PrinterShortcuts System.Environment.SpecialFolder @static
+---@field public Windows System.Environment.SpecialFolder @static
+---@field public UserProfile System.Environment.SpecialFolder @static
+---@field public SystemX86 System.Environment.SpecialFolder @static
+---@field public ProgramFilesX86 System.Environment.SpecialFolder @static
+---@field public CommonProgramFilesX86 System.Environment.SpecialFolder @static
+---@field public CommonTemplates System.Environment.SpecialFolder @static
+---@field public CommonDocuments System.Environment.SpecialFolder @static
+---@field public CommonAdminTools System.Environment.SpecialFolder @static
+---@field public AdminTools System.Environment.SpecialFolder @static
+---@field public CommonMusic System.Environment.SpecialFolder @static
+---@field public CommonPictures System.Environment.SpecialFolder @static
+---@field public CommonVideos System.Environment.SpecialFolder @static
+---@field public Resources System.Environment.SpecialFolder @static
+---@field public LocalizedResources System.Environment.SpecialFolder @static
+---@field public CommonOemLinks System.Environment.SpecialFolder @static
+---@field public CDBurning System.Environment.SpecialFolder @static
+---@field public value__ number
+local m = {}
+
+System.Environment.SpecialFolder = m
+return m

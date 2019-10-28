@@ -1,0 +1,10 @@
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\bin\Debug\ExcelToolWinform.exe.config
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\bin\Debug\ExcelToolWinform.exe
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\bin\Debug\ExcelToolWinform.pdb
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\obj\Debug\ExcelToolWinform.Form1.resources
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\obj\Debug\ExcelToolWinform.Properties.Resources.resources
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\obj\Debug\ExcelToolWinform.csproj.GenerateResource.cache
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\obj\Debug\ExcelToolWinform.csproj.CoreCompileInputs.cache
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\obj\Debug\ExcelToolWinform.exe
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\obj\Debug\ExcelToolWinform.pdb
+E:\WorldTheAutumn\SoundCode\ExcelToolWinform\ExcelToolWinform\obj\Debug\ExcelToolWinform.csprojAssemblyReference.cache

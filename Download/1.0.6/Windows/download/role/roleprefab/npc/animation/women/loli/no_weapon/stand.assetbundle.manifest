@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1766406895
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 93606a60452e1a6f8de61adb32e71bd0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Women/Loli/No_Weapon/Stand.anim
+Dependencies: []

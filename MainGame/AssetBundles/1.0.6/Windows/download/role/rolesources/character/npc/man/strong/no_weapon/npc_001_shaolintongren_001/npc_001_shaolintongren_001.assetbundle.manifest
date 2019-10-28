@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 3625109813
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cf2463bbcfc0cccc5d6baa7a6b851f11
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Man/Strong/No_Weapon/Npc_001_shaolintongren_001/Npc_001_shaolintongren_001.FBX
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/strong/no_weapon/npc_001_shaolintongren_001/materials/npc_001_shaolintongren_001.assetbundle

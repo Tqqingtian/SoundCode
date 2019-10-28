@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 3223000778
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2ae31cf05166a3fc3dba19247b6fde5f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Xiaoyao_001/Sz_xiaoyao_001_xmt/Sz_xiaoyao_001_xmt.FBX
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/xiaoyao_001/sz_xiaoyao_001_xmt/materials/sz_xiaoyao_001_xmt.assetbundle

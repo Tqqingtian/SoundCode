@@ -1,0 +1,26 @@
+UI_PromptWindowCtrl ={};
+
+local this=UI_PromptWindowCtrl;
+
+function UI_PromptWindowCtrl.OnInit(userData)
+    UI_PromptWindowView.txtRoleInfo.text = userData;
+    UI_PromptWindowView.Yes:GetComponent("UnityEngine.UI.Button").onClick.AddListener(
+            function()
+                GameEntry.UI:CloseUIForm(UIFormId.PromptWindow);
+            end
+    );
+
+end
+
+function UI_PromptWindowCtrl.OnOpen(userData)
+
+
+end
+
+function UI_PromptWindowCtrl.OnClose()
+
+end
+
+function UI_PromptWindowCtrl.OnBeforDestry()
+
+end

@@ -1,0 +1,50 @@
+---@class System.Runtime.InteropServices.VarEnum : System.Enum
+---@field public VT_EMPTY System.Runtime.InteropServices.VarEnum @static
+---@field public VT_NULL System.Runtime.InteropServices.VarEnum @static
+---@field public VT_I2 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_I4 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_R4 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_R8 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_CY System.Runtime.InteropServices.VarEnum @static
+---@field public VT_DATE System.Runtime.InteropServices.VarEnum @static
+---@field public VT_BSTR System.Runtime.InteropServices.VarEnum @static
+---@field public VT_DISPATCH System.Runtime.InteropServices.VarEnum @static
+---@field public VT_ERROR System.Runtime.InteropServices.VarEnum @static
+---@field public VT_BOOL System.Runtime.InteropServices.VarEnum @static
+---@field public VT_VARIANT System.Runtime.InteropServices.VarEnum @static
+---@field public VT_UNKNOWN System.Runtime.InteropServices.VarEnum @static
+---@field public VT_DECIMAL System.Runtime.InteropServices.VarEnum @static
+---@field public VT_I1 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_UI1 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_UI2 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_UI4 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_I8 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_UI8 System.Runtime.InteropServices.VarEnum @static
+---@field public VT_INT System.Runtime.InteropServices.VarEnum @static
+---@field public VT_UINT System.Runtime.InteropServices.VarEnum @static
+---@field public VT_VOID System.Runtime.InteropServices.VarEnum @static
+---@field public VT_HRESULT System.Runtime.InteropServices.VarEnum @static
+---@field public VT_PTR System.Runtime.InteropServices.VarEnum @static
+---@field public VT_SAFEARRAY System.Runtime.InteropServices.VarEnum @static
+---@field public VT_CARRAY System.Runtime.InteropServices.VarEnum @static
+---@field public VT_USERDEFINED System.Runtime.InteropServices.VarEnum @static
+---@field public VT_LPSTR System.Runtime.InteropServices.VarEnum @static
+---@field public VT_LPWSTR System.Runtime.InteropServices.VarEnum @static
+---@field public VT_RECORD System.Runtime.InteropServices.VarEnum @static
+---@field public VT_FILETIME System.Runtime.InteropServices.VarEnum @static
+---@field public VT_BLOB System.Runtime.InteropServices.VarEnum @static
+---@field public VT_STREAM System.Runtime.InteropServices.VarEnum @static
+---@field public VT_STORAGE System.Runtime.InteropServices.VarEnum @static
+---@field public VT_STREAMED_OBJECT System.Runtime.InteropServices.VarEnum @static
+---@field public VT_STORED_OBJECT System.Runtime.InteropServices.VarEnum @static
+---@field public VT_BLOB_OBJECT System.Runtime.InteropServices.VarEnum @static
+---@field public VT_CF System.Runtime.InteropServices.VarEnum @static
+---@field public VT_CLSID System.Runtime.InteropServices.VarEnum @static
+---@field public VT_VECTOR System.Runtime.InteropServices.VarEnum @static
+---@field public VT_ARRAY System.Runtime.InteropServices.VarEnum @static
+---@field public VT_BYREF System.Runtime.InteropServices.VarEnum @static
+---@field public value__ number
+local m = {}
+
+System.Runtime.InteropServices.VarEnum = m
+return m

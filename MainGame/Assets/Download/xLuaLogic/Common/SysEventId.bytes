@@ -1,0 +1,46 @@
+SysEventId= {
+    --加载表格完成
+    LoadDataTableComplete = 1001;
+
+    --加载单一表格完成
+    LoadOneDataTableComplete = 1002;
+
+    --加载lua表格完成
+    LoadLuaDataTableComplete=1003;
+
+    --加载进度条更新
+    LoadingProgressChange=1101;
+
+    --检查版本更新开始下载
+    heckVersionBeginDownload = 1201;
+
+    --检查版本更新下载资源中
+    CheckVersionBeginDownloadUpdate = 1202;
+
+    --检查版本更新下载资源完毕
+    CheckVersionBeginDownloadComplete = 1203;
+
+    --预加载开始
+    PreloadBegin = 1204;
+
+    --预加载中
+    PreloadUpdate = 1205;
+
+    --预加载结束
+    PreloadComplete = 1206;
+
+    --关闭检查版本ui
+    CloseCheckVersionUI = 1207;
+
+    --当前选择角色的id
+    CurrSelectRoleId = 13001;
+
+    --创建角色完成
+    CreateRoleComplete = 13002;
+
+
+
+    
+}
+
+

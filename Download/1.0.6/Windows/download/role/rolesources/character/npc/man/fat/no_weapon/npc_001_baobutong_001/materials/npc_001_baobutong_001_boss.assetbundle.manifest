@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3769522266
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ceddd9651f7171956b3668613ae78307
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9b71393b2ee9cb5c4f2e835e78d3d8d4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Man/Fat/No_Weapon/Npc_001_baobutong_001/Materials/Npc_001_baobutong_001_boss.mat
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/fat/no_weapon/npc_001_baobutong_001/materials/npc_001_baobutong_001.assetbundle

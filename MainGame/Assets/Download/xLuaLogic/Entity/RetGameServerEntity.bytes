@@ -1,0 +1,22 @@
+RetGameServerEntity =
+{
+    --区服编号
+    Id;
+
+    --区服状态
+    RunStatus;
+
+    --是否推荐
+    IsCommand;
+
+    --是否新服
+    IsNew;
+
+    --名称
+    Name;
+
+    --ip
+    Ip;
+    --端口号
+    Port;
+}

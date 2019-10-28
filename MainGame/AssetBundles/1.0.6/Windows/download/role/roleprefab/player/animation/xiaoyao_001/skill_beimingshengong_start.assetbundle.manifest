@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3790626382
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fa48af22a56b3594664f66aff28c1b26
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Xiaoyao_001/Skill_Beimingshengong_Start.anim
+Dependencies: []

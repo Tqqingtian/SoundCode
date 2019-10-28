@@ -1,0 +1,114 @@
+print('启动gameInit.lua')
+require "Common/Define"
+require "Common/SysEventId"
+require "Common/UIFormId"
+require "Common/UIItemId"
+
+GameInit={};
+local this=GameInit;
+
+function GameInit.Init()
+	print ('GameInit.Init');
+	this.InitCtrlAndViews();
+	this.LoadDataTable();
+	this.InitProto();
+	this.InitCommon();
+end
+
+function GameInit.InitProcedure()
+
+	require('Modules/Procedure/ProcedureState/ProcedureLogOn');
+
+
+end
+--初始化进程
+function GameInit.InitCtrlAndViews()
+	--一个模块
+	--两个注册 一个加进列表
+	require('Modules/Task/UI_TaskCtrl');
+	require('Modules/Task/UI_TaskView');
+	require('Modules/Loading/UI_LoadingCtrl');
+	require('Modules/Loading/UI_LoadingView');
+    --登录
+    require('Modules/LogOn/UI_LogOnCtrl');
+	require('Modules/LogOn/UI_LogOnView');
+	--区服
+    require('Modules/LogOn/UI_SelectAreaClothingCtrl');
+	require('Modules/LogOn/UI_SelectAreaClothingView');
+
+	require('Modules/SelectRole/UI_SelectRoleCtrl');
+	require('Modules/SelectRole/UI_SelectRoleView');
+
+	require('Modules/SelectRole/UI_CreateRoleCtrl');
+	require('Modules/SelectRole/UI_CreateRoleView');
+	--等待
+	require('Modules/Global/UI_WaitingCtrl');
+	require('Modules/Global/UI_WaitingView');
+
+    require('Entity/EntityConfig')
+end
+
+
+
+function GameInit.LoadDataTable()
+	--章表
+	--print('章表')
+	require('DataNode/DataTable/Create/ChapterEntity')
+	require('DataNode/DataTable/Create/ChapterDBModel')
+	ChapterDBModel.LoadList();
+	--任务表
+	--print('加载任务表')
+	require('DataNode/DataTable/Create/TaskEntity')
+	require('DataNode/DataTable/Create/TaskDBModel')
+	TaskDBModel.LoadList();
+	--职业表
+	require('DataNode/DataTable/Create/JobEntity')
+	require('DataNode/DataTable/Create/JobDBModel')
+	JobDBModel.LoadList();
+
+	require('DataNode/DataTable/Create/Sys_PrefabEntity');
+	require('DataNode/DataTable/Create/Sys_PrefabDBModel');
+	Sys_PrefabDBModel.LoadList();
+	--print('职业表===')
+end
+
+
+local m_TotalTableCount = 0; --总共需要加载的表格数
+local m_CurrLoadTableCount=0;--当前加载的表格数量
+function GameInit.AddTotalLoadTableCount()
+
+	m_TotalTableCount = m_TotalTableCount+1;
+end
+function GameInit.LoadOneTableComplete()
+	m_CurrLoadTableCount = m_CurrLoadTableCount + 1;
+	if (m_TotalTableCount == m_CurrLoadTableCount) then
+		--print("派发监听"..SysEventId.LoadLuaDataTableComplete)
+		GameEntry.Event.CommonEvent:Dispatch(SysEventId.LoadLuaDataTableComplete);
+		--读取章表
+		local rows = ChapterDBModel.GetList();
+		local rows2 = TaskDBModel.GetList();
+		this.jobList = JobDBModel.GetList();
+		this.prefabList = Sys_PrefabDBModel.GetList();
+		--print(#rows2)
+		--for i,w in ipairs(rows) do
+		--	print("========"..w.Id)
+		--end
+		--print('开始读取章表');
+		--for i = 1, #rows do
+		--	local enity=rows[i];
+		--	print(enity.Id);
+		--	print(enity.ChapterName);
+		--end
+	end
+end
+function GameInit.InitCommon()
+
+	require('Common/PrefabId')
+	require('Common/json')
+end
+
+function GameInit.InitProto()
+	require('DataNode/Proto/ProtoCodeDef')
+	require('DataNode/ProtoHandler/SocketProtoListenerForLua')
+	SocketProtoListenerForLua.AddProtoListener();
+end

@@ -1,0 +1,44 @@
+---@class System.Runtime.InteropServices.UnmanagedType : System.Enum
+---@field public Bool System.Runtime.InteropServices.UnmanagedType @static
+---@field public I1 System.Runtime.InteropServices.UnmanagedType @static
+---@field public U1 System.Runtime.InteropServices.UnmanagedType @static
+---@field public I2 System.Runtime.InteropServices.UnmanagedType @static
+---@field public U2 System.Runtime.InteropServices.UnmanagedType @static
+---@field public I4 System.Runtime.InteropServices.UnmanagedType @static
+---@field public U4 System.Runtime.InteropServices.UnmanagedType @static
+---@field public I8 System.Runtime.InteropServices.UnmanagedType @static
+---@field public U8 System.Runtime.InteropServices.UnmanagedType @static
+---@field public R4 System.Runtime.InteropServices.UnmanagedType @static
+---@field public R8 System.Runtime.InteropServices.UnmanagedType @static
+---@field public Currency System.Runtime.InteropServices.UnmanagedType @static
+---@field public BStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public LPStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public LPWStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public LPTStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public ByValTStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public IUnknown System.Runtime.InteropServices.UnmanagedType @static
+---@field public IDispatch System.Runtime.InteropServices.UnmanagedType @static
+---@field public Struct System.Runtime.InteropServices.UnmanagedType @static
+---@field public Interface System.Runtime.InteropServices.UnmanagedType @static
+---@field public SafeArray System.Runtime.InteropServices.UnmanagedType @static
+---@field public ByValArray System.Runtime.InteropServices.UnmanagedType @static
+---@field public SysInt System.Runtime.InteropServices.UnmanagedType @static
+---@field public SysUInt System.Runtime.InteropServices.UnmanagedType @static
+---@field public VBByRefStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public AnsiBStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public TBStr System.Runtime.InteropServices.UnmanagedType @static
+---@field public VariantBool System.Runtime.InteropServices.UnmanagedType @static
+---@field public FunctionPtr System.Runtime.InteropServices.UnmanagedType @static
+---@field public AsAny System.Runtime.InteropServices.UnmanagedType @static
+---@field public LPArray System.Runtime.InteropServices.UnmanagedType @static
+---@field public LPStruct System.Runtime.InteropServices.UnmanagedType @static
+---@field public CustomMarshaler System.Runtime.InteropServices.UnmanagedType @static
+---@field public Error System.Runtime.InteropServices.UnmanagedType @static
+---@field public IInspectable System.Runtime.InteropServices.UnmanagedType @static
+---@field public HString System.Runtime.InteropServices.UnmanagedType @static
+---@field public LPUTF8Str System.Runtime.InteropServices.UnmanagedType @static
+---@field public value__ number
+local m = {}
+
+System.Runtime.InteropServices.UnmanagedType = m
+return m

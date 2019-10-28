@@ -1,0 +1,42 @@
+---@class UnityEngine.Rendering.BlendOp : System.Enum
+---@field public Add UnityEngine.Rendering.BlendOp @static
+---@field public Subtract UnityEngine.Rendering.BlendOp @static
+---@field public ReverseSubtract UnityEngine.Rendering.BlendOp @static
+---@field public Min UnityEngine.Rendering.BlendOp @static
+---@field public Max UnityEngine.Rendering.BlendOp @static
+---@field public LogicalClear UnityEngine.Rendering.BlendOp @static
+---@field public LogicalSet UnityEngine.Rendering.BlendOp @static
+---@field public LogicalCopy UnityEngine.Rendering.BlendOp @static
+---@field public LogicalCopyInverted UnityEngine.Rendering.BlendOp @static
+---@field public LogicalNoop UnityEngine.Rendering.BlendOp @static
+---@field public LogicalInvert UnityEngine.Rendering.BlendOp @static
+---@field public LogicalAnd UnityEngine.Rendering.BlendOp @static
+---@field public LogicalNand UnityEngine.Rendering.BlendOp @static
+---@field public LogicalOr UnityEngine.Rendering.BlendOp @static
+---@field public LogicalNor UnityEngine.Rendering.BlendOp @static
+---@field public LogicalXor UnityEngine.Rendering.BlendOp @static
+---@field public LogicalEquivalence UnityEngine.Rendering.BlendOp @static
+---@field public LogicalAndReverse UnityEngine.Rendering.BlendOp @static
+---@field public LogicalAndInverted UnityEngine.Rendering.BlendOp @static
+---@field public LogicalOrReverse UnityEngine.Rendering.BlendOp @static
+---@field public LogicalOrInverted UnityEngine.Rendering.BlendOp @static
+---@field public Multiply UnityEngine.Rendering.BlendOp @static
+---@field public Screen UnityEngine.Rendering.BlendOp @static
+---@field public Overlay UnityEngine.Rendering.BlendOp @static
+---@field public Darken UnityEngine.Rendering.BlendOp @static
+---@field public Lighten UnityEngine.Rendering.BlendOp @static
+---@field public ColorDodge UnityEngine.Rendering.BlendOp @static
+---@field public ColorBurn UnityEngine.Rendering.BlendOp @static
+---@field public HardLight UnityEngine.Rendering.BlendOp @static
+---@field public SoftLight UnityEngine.Rendering.BlendOp @static
+---@field public Difference UnityEngine.Rendering.BlendOp @static
+---@field public Exclusion UnityEngine.Rendering.BlendOp @static
+---@field public HSLHue UnityEngine.Rendering.BlendOp @static
+---@field public HSLSaturation UnityEngine.Rendering.BlendOp @static
+---@field public HSLColor UnityEngine.Rendering.BlendOp @static
+---@field public HSLLuminosity UnityEngine.Rendering.BlendOp @static
+---@field public value__ number
+local m = {}
+
+UnityEngine.Rendering.BlendOp = m
+return m

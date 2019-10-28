@@ -1,0 +1,58 @@
+---@class System.Text.EncodingNLS : System.Text.Encoding
+local m = {}
+
+---@overload fun(s:string): @virtual
+---@overload fun(chars:System.Char*, count:number): @virtual
+---@virtual
+---@param chars number[]
+---@param index number
+---@param count number
+---@return number
+function m:GetByteCount(chars, index, count) end
+
+---@overload fun(chars:number[], charIndex:number, charCount:number, bytes:string, byteIndex:number): @virtual
+---@overload fun(chars:System.Char*, charCount:number, bytes:System.Byte*, byteCount:number): @virtual
+---@virtual
+---@param s string
+---@param charIndex number
+---@param charCount number
+---@param bytes string
+---@param byteIndex number
+---@return number
+function m:GetBytes(s, charIndex, charCount, bytes, byteIndex) end
+
+---@overload fun(bytes:System.Byte*, count:number): @virtual
+---@virtual
+---@param bytes string
+---@param index number
+---@param count number
+---@return number
+function m:GetCharCount(bytes, index, count) end
+
+---@overload fun(bytes:System.Byte*, byteCount:number, chars:System.Char*, charCount:number): @virtual
+---@virtual
+---@param bytes string
+---@param byteIndex number
+---@param byteCount number
+---@param chars number[]
+---@param charIndex number
+---@return number
+function m:GetChars(bytes, byteIndex, byteCount, chars, charIndex) end
+
+---@virtual
+---@param bytes string
+---@param index number
+---@param count number
+---@return string
+function m:GetString(bytes, index, count) end
+
+---@virtual
+---@return System.Text.Decoder
+function m:GetDecoder() end
+
+---@virtual
+---@return System.Text.Encoder
+function m:GetEncoder() end
+
+System.Text.EncodingNLS = m
+return m

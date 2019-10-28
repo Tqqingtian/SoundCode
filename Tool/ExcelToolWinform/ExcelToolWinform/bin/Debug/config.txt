@@ -1,0 +1,7 @@
+E:\WorldTheAutumn\SoundCode\Tool\LocalDataTable\Sys_Scene.xls
+E:\WorldTheAutumn\SoundCode\Tool\LocalDataTable\
+E:\WorldTheAutumn\SoundCode\MainGame\Assets\Download\DataTable\
+E:\WorldTheAutumn\SoundCode\MainGame\Assets\TQScript\Data\DataTable\Create\
+E:\WorldTheAutumn\SoundCode\MainGame\Assets\Download\xLuaLogic\DataNode\DataTable\Create\
+E:\WorldTheAutumn\SoundCode\Server\GameData\
+E:\WorldTheAutumn\SoundCode\Server\GameServer\GameServerApp\GameServerApp\Data\LocalData\Create\

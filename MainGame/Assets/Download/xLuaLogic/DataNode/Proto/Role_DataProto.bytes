@@ -1,0 +1,72 @@
+--角色数据
+Role_DataProto = { ProtoCode = 10011, RoleId = 0, RoleName = "" }
+local this = Role_DataProto;
+
+Role_DataProto.__index = Role_DataProto;
+
+function Role_DataProto.New()
+    local self = { };
+    setmetatable(self, Role_DataProto);
+    return self;
+end
+
+function Role_DataProto.GetProtoName()
+    return "Role_Data";
+end
+
+
+--发送协议
+function Role_DataProto.SendProto(proto, isChild)
+
+    local ms = nil;
+
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Socket.SocketSendMS;
+        ms:SetLength(0);
+        ms:WriteUShort(proto.ProtoCode);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStream();
+        ms.SetLength(0);
+    end
+
+    ms:WriteInt(proto.RoleId);
+    ms:WriteUTF8String(proto.RoleName);
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>发送消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+
+        CS.TQ.GameEntry.Socket:SendMsg(ms:ToArray());
+    else
+        local retBuffer = ms:ToArray();
+        CS.TQ.GameEntry.Lua:EnqueueMemoryStream(ms);
+        return retBuffer;
+    end
+end
+
+
+--解析协议
+function Role_DataProto.GetProto(buffer, isChild)
+
+    local proto = Role_DataProto.New(); --实例化一个协议对象
+    local ms = nil;
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Lua:LoadSocketReceiveMS(buffer);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStreamAndLoadBuffer(buffer);
+    end
+
+    proto.RoleId = ms:ReadInt();
+    proto.RoleName = ms:ReadUTF8String();
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>接收消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+    end
+
+    return proto;
+end

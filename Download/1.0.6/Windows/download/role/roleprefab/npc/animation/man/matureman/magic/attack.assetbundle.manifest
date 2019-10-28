@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1259839298
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c7b43f6fae626412633d3f8803e8e69e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Man/MatureMan/Magic/Attack.anim
+Dependencies: []

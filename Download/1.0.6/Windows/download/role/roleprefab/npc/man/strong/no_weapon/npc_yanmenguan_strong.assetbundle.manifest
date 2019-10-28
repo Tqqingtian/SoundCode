@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 1538317943
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c00cf14ef213662a08baeb9527bc849f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 016342b93686c3b78e8424543f3211aa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Man/Strong/No_Weapon/Npc_Yanmenguan_Strong.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/strong/no_weapon/npc_yanmenguan_strong/materials/npc_001_daozei_001.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/roleprefab/npc/animation/man/strong/no_weapon/yanmenguan_fight.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/man/strong/no_weapon/npc_yanmenguan_strong/npc_yanmenguan_strong.assetbundle

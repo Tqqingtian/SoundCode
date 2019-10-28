@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 2998803047
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cd31609af9c2d5cfc205d0b6aea4d483
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 39e8ea846a95c25cc3f16b7e5bacbae1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Ride/Qicheng_001_shishizi_001.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/ride/qicheng_001_shishizi_001/materials/qicheng_001_shishizi_001.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/ride/qicheng_001_shishizi_001/qicheng_001_shishizi_001.assetbundle

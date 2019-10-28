@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 2730091170
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b7e6f002852ee1850c75edc28388b9fe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 777144212014d9a371a5fa15d2bd7583
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Player/Weapon/Tianshan/Dao_010_002/Dao_010_002.FBX
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/weapon/tianshan/dao_010_002/materials/dao_010_002.assetbundle

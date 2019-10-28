@@ -1,0 +1,8 @@
+--客户端发送创建角色消息（工具只生成一次）
+RoleOperation_CreateRoleHandler = { };
+
+local this = RoleOperation_CreateRoleHandler;
+
+function RoleOperation_CreateRoleHandler.OnRoleOperation_CreateRole(buffer)
+    local proto = RoleOperation_CreateRoleProto.GetProto(buffer);
+end

@@ -1,0 +1,108 @@
+--角色列表测试
+Role_ListTestProto = { ProtoCode = 11006, RoleType = 0, CurrRole = nil, RoleList = nil }
+local this = Role_ListTestProto;
+
+Role_ListTestProto.__index = Role_ListTestProto;
+
+function Role_ListTestProto.New()
+    local self = { };
+    setmetatable(self, Role_ListTestProto);
+    return self;
+end
+
+function Role_ListTestProto.GetProtoName()
+    return "Role_ListTest";
+end
+
+
+--发送协议
+function Role_ListTestProto.SendProto(proto, isChild)
+
+    local ms = nil;
+
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Socket.SocketSendMS;
+        ms:SetLength(0);
+        ms:WriteUShort(proto.ProtoCode);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStream();
+        ms.SetLength(0);
+    end
+
+    ms:WriteInt(proto.RoleType);
+
+    if (proto.CurrRole ~= nil) then
+        local buff_CurrRole = Role_DataProto.SendProto(proto.CurrRole, true);
+        ms:WriteInt(buff_CurrRole.Length);
+        ms:Write(buff_CurrRole, 0, buff_CurrRole.Length);
+    else
+        ms:WriteInt(0);
+    end
+
+    if (proto.RoleList ~= nil) then
+        local len_RoleList = #proto.RoleList;
+        for i = 1, len_RoleList do
+            local _Role_DataProto = proto.RoleList[i];
+            local _buff_Curr = Role_DataProto.SendProto(_Role_DataProto, true);
+            ms:WriteInt(_buff_Curr.Length);
+            ms:Write(_buff_Curr, 0, _buff_Curr.Length);
+        end
+    else
+        ms:WriteInt(0);
+    end
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>发送消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+
+        CS.TQ.GameEntry.Socket:SendMsg(ms:ToArray());
+    else
+        local retBuffer = ms:ToArray();
+        CS.TQ.GameEntry.Lua:EnqueueMemoryStream(ms);
+        return retBuffer;
+    end
+end
+
+
+--解析协议
+function Role_ListTestProto.GetProto(buffer, isChild)
+
+    local proto = Role_ListTestProto.New(); --实例化一个协议对象
+    local ms = nil;
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Lua:LoadSocketReceiveMS(buffer);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStreamAndLoadBuffer(buffer);
+    end
+
+    proto.RoleType = ms:ReadInt();
+
+    local len_CurrRole = ms:ReadInt();
+    if (len_CurrRole > 0) then
+        local buff_CurrRole = CS.TQ.GameEntry.Lua:GetByteArray(ms, len_CurrRole);
+        proto.CurrRole = Role_DataProto.GetProto(buff_CurrRole, true);
+    end
+
+    local len_RoleList = ms:ReadInt();
+    if (len_RoleList > 0) then
+        proto.RoleList = { };
+        for i = 1, len_RoleList do
+            local _len_RoleList = ms:ReadInt();
+            if (_len_RoleList > 0) then
+                local _buff_RoleList = CS.TQ.GameEntry.Lua:GetByteArray(ms, _len_RoleList);
+                proto.RoleList[i] = Role_DataProto.GetProto(_buff_RoleList, true);
+            end
+        end
+    end
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>接收消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+    end
+
+    return proto;
+end

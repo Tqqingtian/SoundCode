@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 646152535
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ae192fc5003230604d0f5f3063d50911
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Women/Loli/One_Sword/Dead.anim
+Dependencies: []

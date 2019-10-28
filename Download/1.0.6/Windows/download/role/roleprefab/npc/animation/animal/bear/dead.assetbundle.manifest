@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1181997829
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8807458bcf722c360588a81652621dc8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Animal/Bear/Dead.anim
+Dependencies: []

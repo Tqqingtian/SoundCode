@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 31284973
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: df6a4a0008f394445c3282551460bcf1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Women/MatureFemale/No_Weapon/Marriage.anim
+Dependencies: []

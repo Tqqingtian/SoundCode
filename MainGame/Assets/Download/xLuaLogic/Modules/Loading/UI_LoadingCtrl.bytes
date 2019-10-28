@@ -1,0 +1,32 @@
+UI_LoadingCtrl ={};
+
+local this=UI_LoadingCtrl;
+--初始化
+function UI_LoadingCtrl.OnInit(userData)
+    print('UI_LoadingCtrl.OnInit');
+
+end
+--打开时
+function UI_LoadingCtrl.OnOpen(userData)
+    print('OnOpen')
+    GameEntry.Event.CommonEvent:AddEventListener(SysEventId.LoadingProgressChange,this.OnLoadingProgressChange);
+end
+function UI_LoadingCtrl.OnLoadingProgressChange(userData)
+    local progress = math.min(userData.FloatParam1*100,100);
+    if (userData.IstParam1==1) then
+        UI_LoadingView.txtTip.text = GameEntry.Localization:GetString("Loading.ChangeScene",math.floor(progress));
+        print(UI_LoadingView.txtTip.text);
+    end
+
+    UI_LoadingView.Scrollbar.size=userData.FloatParam1;
+end
+
+
+--关闭时
+function UI_LoadingCtrl.OnClose()
+    GameEntry.Event.CommonEvent:RemoveEventListener(SysEventId.LoadingProgressChange,this.LoadingProgressChange);
+end
+
+function UI_LoadingCtrl.OnBeforDestry()
+    print("OnBeforDestry")
+end

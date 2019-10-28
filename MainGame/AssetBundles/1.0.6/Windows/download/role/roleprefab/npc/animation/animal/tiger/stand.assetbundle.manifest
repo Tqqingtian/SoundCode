@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1564159734
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 52974fdcb6c6f2252dac47449b33095b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Animal/Tiger/Stand.anim
+Dependencies: []

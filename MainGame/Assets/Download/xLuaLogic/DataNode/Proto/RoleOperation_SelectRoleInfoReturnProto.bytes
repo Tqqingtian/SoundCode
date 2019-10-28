@@ -1,0 +1,158 @@
+--服务器返回角色信息
+RoleOperation_SelectRoleInfoReturnProto = { ProtoCode = 10010, IsSuccess = false, MsgCode = 0, RoldId = 0, RoleNickName = "", JobId = 0, Level = 0, TotalRechargeMoney = 0, Money = 0, Gold = 0, Exp = 0, MaxHP = 0, MaxMP = 0, CurrHP = 0, CurrMP = 0, ToSpeed = 0, WeaponDamageMin = 0, WeaponDamageMax = 0, AttackNumber = 0, StrikePower = 0, PiercingPower = 0, MagicPower = 0, LastInWorldMapId = 0, LastInWorldMapPos = "", Equip_Weapon = 0, Equip_Pants = 0, Equip_Clothes = 0, Equip_Belt = 0, Equip_Cuff = 0, Equip_Necklace = 0, Equip_Shoe = 0, Equip_Ring = 0, Equip_WeaponTableId = 0, Equip_PantsTableId = 0, Equip_ClothesTableId = 0, Equip_BeltTableId = 0, Equip_CuffTableId = 0, Equip_NecklaceTableId = 0, Equip_ShoeTableId = 0, Equip_RingTableId = 0, ChoppingDefense = 0, PuncturDefense = 0, MagicDefense = 0 }
+local this = RoleOperation_SelectRoleInfoReturnProto;
+
+RoleOperation_SelectRoleInfoReturnProto.__index = RoleOperation_SelectRoleInfoReturnProto;
+
+function RoleOperation_SelectRoleInfoReturnProto.New()
+    local self = { };
+    setmetatable(self, RoleOperation_SelectRoleInfoReturnProto);
+    return self;
+end
+
+function RoleOperation_SelectRoleInfoReturnProto.GetProtoName()
+    return "RoleOperation_SelectRoleInfoReturn";
+end
+
+
+--发送协议
+function RoleOperation_SelectRoleInfoReturnProto.SendProto(proto, isChild)
+
+    local ms = nil;
+
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Socket.SocketSendMS;
+        ms:SetLength(0);
+        ms:WriteUShort(proto.ProtoCode);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStream();
+        ms.SetLength(0);
+    end
+
+    ms:WriteBool(proto.IsSuccess);
+    if(proto.IsSuccess) then
+        ms:WriteInt(RoldId);
+        ms:WriteUTF8String(RoleNickName);
+        ms:WriteByte(JobId);
+        ms:WriteInt(Level);
+        ms:WriteInt(TotalRechargeMoney);
+        ms:WriteInt(Money);
+        ms:WriteInt(Gold);
+        ms:WriteInt(Exp);
+        ms:WriteInt(MaxHP);
+        ms:WriteInt(MaxMP);
+        ms:WriteInt(CurrHP);
+        ms:WriteInt(CurrMP);
+        ms:WriteInt(ToSpeed);
+        ms:WriteInt(WeaponDamageMin);
+        ms:WriteInt(WeaponDamageMax);
+        ms:WriteInt(AttackNumber);
+        ms:WriteInt(StrikePower);
+        ms:WriteInt(PiercingPower);
+        ms:WriteInt(MagicPower);
+        ms:WriteInt(LastInWorldMapId);
+        ms:WriteUTF8String(LastInWorldMapPos);
+        ms:WriteInt(Equip_Weapon);
+        ms:WriteInt(Equip_Pants);
+        ms:WriteInt(Equip_Clothes);
+        ms:WriteInt(Equip_Belt);
+        ms:WriteInt(Equip_Cuff);
+        ms:WriteInt(Equip_Necklace);
+        ms:WriteInt(Equip_Shoe);
+        ms:WriteInt(Equip_Ring);
+        ms:WriteInt(Equip_WeaponTableId);
+        ms:WriteInt(Equip_PantsTableId);
+        ms:WriteInt(Equip_ClothesTableId);
+        ms:WriteInt(Equip_BeltTableId);
+        ms:WriteInt(Equip_CuffTableId);
+        ms:WriteInt(Equip_NecklaceTableId);
+        ms:WriteInt(Equip_ShoeTableId);
+        ms:WriteInt(Equip_RingTableId);
+        ms:WriteInt(ChoppingDefense);
+        ms:WriteInt(PuncturDefense);
+        ms:WriteInt(MagicDefense);
+        else
+        ms:WriteInt(MsgCode);
+    end
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>发送消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+
+        CS.TQ.GameEntry.Socket:SendMsg(ms:ToArray());
+    else
+        local retBuffer = ms:ToArray();
+        CS.TQ.GameEntry.Lua:EnqueueMemoryStream(ms);
+        return retBuffer;
+    end
+end
+
+
+--解析协议
+function RoleOperation_SelectRoleInfoReturnProto.GetProto(buffer, isChild)
+
+    local proto = RoleOperation_SelectRoleInfoReturnProto.New(); --实例化一个协议对象
+    local ms = nil;
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Lua:LoadSocketReceiveMS(buffer);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStreamAndLoadBuffer(buffer);
+    end
+
+    proto.IsSuccess = ms:ReadBool();
+    if(proto.IsSuccess) then
+        proto.RoldId = ms:ReadInt();
+        proto.RoleNickName = ms:ReadUTF8String();
+        proto.JobId = ms:ReadByte();
+        proto.Level = ms:ReadInt();
+        proto.TotalRechargeMoney = ms:ReadInt();
+        proto.Money = ms:ReadInt();
+        proto.Gold = ms:ReadInt();
+        proto.Exp = ms:ReadInt();
+        proto.MaxHP = ms:ReadInt();
+        proto.MaxMP = ms:ReadInt();
+        proto.CurrHP = ms:ReadInt();
+        proto.CurrMP = ms:ReadInt();
+        proto.ToSpeed = ms:ReadInt();
+        proto.WeaponDamageMin = ms:ReadInt();
+        proto.WeaponDamageMax = ms:ReadInt();
+        proto.AttackNumber = ms:ReadInt();
+        proto.StrikePower = ms:ReadInt();
+        proto.PiercingPower = ms:ReadInt();
+        proto.MagicPower = ms:ReadInt();
+        proto.LastInWorldMapId = ms:ReadInt();
+        proto.LastInWorldMapPos = ms:ReadUTF8String();
+        proto.Equip_Weapon = ms:ReadInt();
+        proto.Equip_Pants = ms:ReadInt();
+        proto.Equip_Clothes = ms:ReadInt();
+        proto.Equip_Belt = ms:ReadInt();
+        proto.Equip_Cuff = ms:ReadInt();
+        proto.Equip_Necklace = ms:ReadInt();
+        proto.Equip_Shoe = ms:ReadInt();
+        proto.Equip_Ring = ms:ReadInt();
+        proto.Equip_WeaponTableId = ms:ReadInt();
+        proto.Equip_PantsTableId = ms:ReadInt();
+        proto.Equip_ClothesTableId = ms:ReadInt();
+        proto.Equip_BeltTableId = ms:ReadInt();
+        proto.Equip_CuffTableId = ms:ReadInt();
+        proto.Equip_NecklaceTableId = ms:ReadInt();
+        proto.Equip_ShoeTableId = ms:ReadInt();
+        proto.Equip_RingTableId = ms:ReadInt();
+        proto.ChoppingDefense = ms:ReadInt();
+        proto.PuncturDefense = ms:ReadInt();
+        proto.MagicDefense = ms:ReadInt();
+        else
+        proto.MsgCode = ms:ReadInt();
+    end
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>接收消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+    end
+
+    return proto;
+end

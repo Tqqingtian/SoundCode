@@ -1,0 +1,67 @@
+---@class UnityEngine.TextureFormat : System.Enum
+---@field public Alpha8 UnityEngine.TextureFormat @static
+---@field public ARGB4444 UnityEngine.TextureFormat @static
+---@field public RGB24 UnityEngine.TextureFormat @static
+---@field public RGBA32 UnityEngine.TextureFormat @static
+---@field public ARGB32 UnityEngine.TextureFormat @static
+---@field public RGB565 UnityEngine.TextureFormat @static
+---@field public R16 UnityEngine.TextureFormat @static
+---@field public DXT1 UnityEngine.TextureFormat @static
+---@field public DXT5 UnityEngine.TextureFormat @static
+---@field public RGBA4444 UnityEngine.TextureFormat @static
+---@field public BGRA32 UnityEngine.TextureFormat @static
+---@field public RHalf UnityEngine.TextureFormat @static
+---@field public RGHalf UnityEngine.TextureFormat @static
+---@field public RGBAHalf UnityEngine.TextureFormat @static
+---@field public RFloat UnityEngine.TextureFormat @static
+---@field public RGFloat UnityEngine.TextureFormat @static
+---@field public RGBAFloat UnityEngine.TextureFormat @static
+---@field public YUY2 UnityEngine.TextureFormat @static
+---@field public RGB9e5Float UnityEngine.TextureFormat @static
+---@field public BC4 UnityEngine.TextureFormat @static
+---@field public BC5 UnityEngine.TextureFormat @static
+---@field public BC6H UnityEngine.TextureFormat @static
+---@field public BC7 UnityEngine.TextureFormat @static
+---@field public DXT1Crunched UnityEngine.TextureFormat @static
+---@field public DXT5Crunched UnityEngine.TextureFormat @static
+---@field public PVRTC_RGB2 UnityEngine.TextureFormat @static
+---@field public PVRTC_RGBA2 UnityEngine.TextureFormat @static
+---@field public PVRTC_RGB4 UnityEngine.TextureFormat @static
+---@field public PVRTC_RGBA4 UnityEngine.TextureFormat @static
+---@field public ETC_RGB4 UnityEngine.TextureFormat @static
+---@field public ATC_RGB4 UnityEngine.TextureFormat @static
+---@field public ATC_RGBA8 UnityEngine.TextureFormat @static
+---@field public EAC_R UnityEngine.TextureFormat @static
+---@field public EAC_R_SIGNED UnityEngine.TextureFormat @static
+---@field public EAC_RG UnityEngine.TextureFormat @static
+---@field public EAC_RG_SIGNED UnityEngine.TextureFormat @static
+---@field public ETC2_RGB UnityEngine.TextureFormat @static
+---@field public ETC2_RGBA1 UnityEngine.TextureFormat @static
+---@field public ETC2_RGBA8 UnityEngine.TextureFormat @static
+---@field public ASTC_RGB_4x4 UnityEngine.TextureFormat @static
+---@field public ASTC_RGB_5x5 UnityEngine.TextureFormat @static
+---@field public ASTC_RGB_6x6 UnityEngine.TextureFormat @static
+---@field public ASTC_RGB_8x8 UnityEngine.TextureFormat @static
+---@field public ASTC_RGB_10x10 UnityEngine.TextureFormat @static
+---@field public ASTC_RGB_12x12 UnityEngine.TextureFormat @static
+---@field public ASTC_RGBA_4x4 UnityEngine.TextureFormat @static
+---@field public ASTC_RGBA_5x5 UnityEngine.TextureFormat @static
+---@field public ASTC_RGBA_6x6 UnityEngine.TextureFormat @static
+---@field public ASTC_RGBA_8x8 UnityEngine.TextureFormat @static
+---@field public ASTC_RGBA_10x10 UnityEngine.TextureFormat @static
+---@field public ASTC_RGBA_12x12 UnityEngine.TextureFormat @static
+---@field public ETC_RGB4_3DS UnityEngine.TextureFormat @static
+---@field public ETC_RGBA8_3DS UnityEngine.TextureFormat @static
+---@field public RG16 UnityEngine.TextureFormat @static
+---@field public R8 UnityEngine.TextureFormat @static
+---@field public ETC_RGB4Crunched UnityEngine.TextureFormat @static
+---@field public ETC2_RGBA8Crunched UnityEngine.TextureFormat @static
+---@field public PVRTC_2BPP_RGB UnityEngine.TextureFormat @static
+---@field public PVRTC_2BPP_RGBA UnityEngine.TextureFormat @static
+---@field public PVRTC_4BPP_RGB UnityEngine.TextureFormat @static
+---@field public PVRTC_4BPP_RGBA UnityEngine.TextureFormat @static
+---@field public value__ number
+local m = {}
+
+UnityEngine.TextureFormat = m
+return m

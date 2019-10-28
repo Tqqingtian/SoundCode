@@ -1,0 +1,8 @@
+--服务器返回角色信息（工具只生成一次）
+RoleOperation_SelectRoleInfoReturnHandler = { };
+
+local this = RoleOperation_SelectRoleInfoReturnHandler;
+
+function RoleOperation_SelectRoleInfoReturnHandler.OnRoleOperation_SelectRoleInfoReturn(buffer)
+    local proto = RoleOperation_SelectRoleInfoReturnProto.GetProto(buffer);
+end

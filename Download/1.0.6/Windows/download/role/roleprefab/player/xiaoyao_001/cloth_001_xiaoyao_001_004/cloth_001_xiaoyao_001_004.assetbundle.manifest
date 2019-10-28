@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 3753240018
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7786fca50d203f8bf20ee5855d21f528
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Xiaoyao_001/Cloth_001_xiaoyao_001_004/Cloth_001_xiaoyao_001_004.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/xiaoyao_001/cloth_001_xiaoyao_001_004/materials/cloth_001_xiaoyao_001_004.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/xiaoyao_001/cloth_001_xiaoyao_001_004/materials/hair_xiaoyao_004.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/player/xiaoyao_001/cloth_001_xiaoyao_001_004/cloth_001_xiaoyao_001_004.assetbundle

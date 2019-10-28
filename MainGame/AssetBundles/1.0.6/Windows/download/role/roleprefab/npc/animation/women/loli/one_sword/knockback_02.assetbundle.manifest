@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 520620066
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e9b700adc0b1a445c2d7e9fd4cec22ba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Npc/Animation/Women/Loli/One_Sword/Knockback_02.anim
+Dependencies: []

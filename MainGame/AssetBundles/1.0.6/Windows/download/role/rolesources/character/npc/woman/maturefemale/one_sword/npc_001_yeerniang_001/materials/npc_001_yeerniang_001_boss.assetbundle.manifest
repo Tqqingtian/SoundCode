@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 981191704
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c968bc8fc10bd43b24a930e0be89f631
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9b71393b2ee9cb5c4f2e835e78d3d8d4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RoleSources/Character/Npc/Woman/MatureFemale/One_Sword/Npc_001_yeerniang_001/Materials/Npc_001_yeerniang_001_boss.mat
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/npc/woman/maturefemale/one_sword/npc_001_yeerniang_001/materials/npc_001_yeerniang_001.assetbundle

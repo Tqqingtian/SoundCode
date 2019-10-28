@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3965253061
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 628275956f286737ae5f40f9a4faf82a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Player/Animation/Tianshan_001/Hit.anim
+Dependencies: []

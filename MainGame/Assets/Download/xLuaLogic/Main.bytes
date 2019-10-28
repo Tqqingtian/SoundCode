@@ -1,0 +1,6 @@
+require "GameInit"
+
+GameInit.Init();
+
+
+

@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3101865475
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c14815456f81ed31f930f5aa2b55e52d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9df0821695fe36d0680789ec9b590e4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Download/Role/RolePrefab/Monster/Monster_001_zonglang_001.prefab
+Dependencies:
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/monster/monster_001_zonglang_001/materials/monster_001_zonglang_001.assetbundle
+- E:/NEWMORPG/Client/NEWMMO/Assets/../AssetBundles/1.0.6/Windows/download/role/rolesources/character/monster/monster_001_zonglang_001/monster_001_zonglang_001.assetbundle
