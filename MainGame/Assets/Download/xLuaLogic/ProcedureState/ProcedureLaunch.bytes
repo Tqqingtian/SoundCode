@@ -1,0 +1,20 @@
+ProcedureLaunch = {}
+print("回调 流程 ProcedureLaunch");
+local this = ProcedureLaunch;
+--进入游戏
+function ProcedureLaunch.OnEnter()
+    print("ProcedureLaunch.OnEnter()");
+
+end
+
+function ProcedureLaunch.OnUpdate()
+    print("ProcedureLaunch.OnUpdate()");
+end
+
+function ProcedureLaunch.OnLeave()
+    print("ProcedureLaunch.OnLeave()");
+end
+
+function ProcedureLaunch.OnDestry()
+    print("ProcedureLaunch.OnDestry()");
+end

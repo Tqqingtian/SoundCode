@@ -1,0 +1,34 @@
+UI_GameSceneView = { };
+local this = UI_GameSceneView;
+
+local NickNameIndex = 0;
+local SliderHPIndex = 1;
+local SliderMPIndex = 2;
+
+function UI_GameSceneView.OnInit(transform, userData)
+    print('UI_GameSceneView.OnInit');
+    this.InitView(transform);
+    UI_GameSceneCtrl.OnInit(userData);
+end
+
+function UI_GameSceneView.InitView(transform)
+    this.LuaForm = transform:GetComponent(typeof(CS.TQ.LuaForm));
+    this.NickName = this.LuaForm:GetLuaComs(NickNameIndex);
+    this.SliderHP = this.LuaForm:GetLuaComs(SliderHPIndex);
+    this.SliderMP = this.LuaForm:GetLuaComs(SliderMPIndex);
+end
+
+function UI_GameSceneView.OnOpen(userData)
+    UI_GameSceneCtrl.OnOpen(userData);
+end
+
+function UI_GameSceneView.OnClose()
+    UI_GameSceneCtrl.OnClose();
+end
+
+function UI_GameSceneView.OnBeforDestroy()
+    UI_GameSceneCtrl.OnBeforDestroy();
+    NickNameIndex = nil;
+    SliderHPIndex = nil;
+    SliderMPIndex = nil;
+end

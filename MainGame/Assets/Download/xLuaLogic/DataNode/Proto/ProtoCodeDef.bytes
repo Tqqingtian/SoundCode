@@ -6,9 +6,28 @@ ProtoCode =
     RoleOperation_CreateRoleReturn = 10004,
     RoleOperation_DeleteRole = 10005,
     RoleOperation_DeleteRoleReturn = 10006,
+    RoleOperation_EnterGame = 10007,
+    RoleOperation_EnterGameReturn = 10008,
+    RoleOperation_SelectRoleInfo = 10009,
     RoleOperation_SelectRoleInfoReturn = 10010,
     Role_Data = 10011,
     Role_ListTest = 11006,
+    WorldMap_RoleEnter = 13001,
+    WorldMap_RoleEnterReturn = 13002,
+    WorldMap_Pos = 13003,
+    WorldMap_RoleAlreadyEnter = 13004,
+    WorldMap_OtherRoleEnter = 13005,
+    WorldMap_OtherRoleLeave = 13006,
+    WorldMap_InitRole = 13007,
+    WorldMap_CurrRoleMove = 13008,
+    WorldMap_OtherRoleMove = 13009,
+    WorldMap_CurrRoleUseSkill = 13010,
+    WorldMap_OtherRoleUseSkill = 13011,
+    WorldMap_OtherRoleDie = 13012,
+    WorldMap_CurrRoleUpdateInfo = 13013,
+    WorldMap_OtherRoleUpdateInfo = 13014,
+    WorldMap_CurrRoleResurgence = 13015,
+    WorldMap_OtherRoleResurgence = 13016,
     Task_SearchTask = 15001,
     Task_SearchTaskReturn = 15002,
     Shop_BuyProduct = 16001,
@@ -31,10 +50,29 @@ require "DataNode/Proto/RoleOperation_CreateRoleProto";
 require "DataNode/Proto/RoleOperation_CreateRoleReturnProto";
 require "DataNode/Proto/RoleOperation_DeleteRoleProto";
 require "DataNode/Proto/RoleOperation_DeleteRoleReturnProto";
+require "DataNode/Proto/RoleOperation_EnterGameProto";
+require "DataNode/Proto/RoleOperation_EnterGameReturnProto";
+require "DataNode/Proto/RoleOperation_SelectRoleInfoProto";
 require "DataNode/Proto/RoleOperation_SelectRoleInfoReturnProto";
 require "DataNode/Proto/Role_DataProto";
 require "DataNode/Proto/Role_ListTestProto";
 require "DataNode/ProtoHandler/Role_ListTestHandler";
+require "DataNode/Proto/WorldMap_RoleEnterProto";
+require "DataNode/Proto/WorldMap_RoleEnterReturnProto";
+require "DataNode/Proto/WorldMap_PosProto";
+require "DataNode/Proto/WorldMap_RoleAlreadyEnterProto";
+require "DataNode/Proto/WorldMap_OtherRoleEnterProto";
+require "DataNode/Proto/WorldMap_OtherRoleLeaveProto";
+require "DataNode/Proto/WorldMap_InitRoleProto";
+require "DataNode/Proto/WorldMap_CurrRoleMoveProto";
+require "DataNode/Proto/WorldMap_OtherRoleMoveProto";
+require "DataNode/Proto/WorldMap_CurrRoleUseSkillProto";
+require "DataNode/Proto/WorldMap_OtherRoleUseSkillProto";
+require "DataNode/Proto/WorldMap_OtherRoleDieProto";
+require "DataNode/Proto/WorldMap_CurrRoleUpdateInfoProto";
+require "DataNode/Proto/WorldMap_OtherRoleUpdateInfoProto";
+require "DataNode/Proto/WorldMap_CurrRoleResurgenceProto";
+require "DataNode/Proto/WorldMap_OtherRoleResurgenceProto";
 require "DataNode/Proto/Task_SearchTaskProto";
 require "DataNode/Proto/Task_SearchTaskReturnProto";
 require "DataNode/ProtoHandler/Task_SearchTaskReturnHandler";

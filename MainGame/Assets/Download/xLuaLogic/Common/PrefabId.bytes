@@ -2,4 +2,11 @@
 PrefabId = {
 
     Cube1 = 3;
+    --修真
+    Coatard = 4;
+
+    --修真 选择角色界面
+    CoatardSelect = 5;
+    --点击特效
+    PointUI = 6;
 }

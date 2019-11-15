@@ -1,0 +1,80 @@
+--服务器广播其他角色移动消息
+WorldMap_OtherRoleMoveProto = { ProtoCode = 13009, RoleId = 0, TargetPosX = 0, TargetPosY = 0, TargetPosZ = 0, ServerTime = 0, NeedTime = 0 }
+local this = WorldMap_OtherRoleMoveProto;
+
+WorldMap_OtherRoleMoveProto.__index = WorldMap_OtherRoleMoveProto;
+
+function WorldMap_OtherRoleMoveProto.New()
+    local self = { };
+    setmetatable(self, WorldMap_OtherRoleMoveProto);
+    return self;
+end
+
+function WorldMap_OtherRoleMoveProto.GetProtoName()
+    return "WorldMap_OtherRoleMove";
+end
+
+
+--发送协议
+function WorldMap_OtherRoleMoveProto.SendProto(proto, isChild)
+
+    local ms = nil;
+
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Socket.SocketSendMS;
+        ms:SetLength(0);
+        ms:WriteUShort(proto.ProtoCode);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStream();
+        ms.SetLength(0);
+    end
+
+    ms:WriteInt(proto.RoleId);
+    ms:WriteFloat(proto.TargetPosX);
+    ms:WriteFloat(proto.TargetPosY);
+    ms:WriteFloat(proto.TargetPosZ);
+    ms:WriteLong(proto.ServerTime);
+    ms:WriteInt(proto.NeedTime);
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>发送消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+
+        CS.TQ.GameEntry.Socket:SendMsg(ms:ToArray());
+    else
+        local retBuffer = ms:ToArray();
+        CS.TQ.GameEntry.Lua:EnqueueMemoryStream(ms);
+        return retBuffer;
+    end
+end
+
+
+--解析协议
+function WorldMap_OtherRoleMoveProto.GetProto(buffer, isChild)
+
+    local proto = WorldMap_OtherRoleMoveProto.New(); --实例化一个协议对象
+    local ms = nil;
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Lua:LoadSocketReceiveMS(buffer);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStreamAndLoadBuffer(buffer);
+    end
+
+    proto.RoleId = ms:ReadInt();
+    proto.TargetPosX = ms:ReadFloat();
+    proto.TargetPosY = ms:ReadFloat();
+    proto.TargetPosZ = ms:ReadFloat();
+    proto.ServerTime = ms:ReadLong();
+    proto.NeedTime = ms:ReadInt();
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>接收消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+    end
+
+    return proto;
+end

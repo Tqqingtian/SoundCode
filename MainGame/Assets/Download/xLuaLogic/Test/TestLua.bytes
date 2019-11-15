@@ -1,0 +1,7 @@
+TestLua = {}
+
+function TestLua.OnInit()
+    print("TestLua.OnInit()")
+    print(typeof(CS.PolyNavAgent))
+    print(CS.TestLua);
+end

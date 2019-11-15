@@ -3,7 +3,8 @@
 <linker>
 
 	<assembly fullname="Assembly-CSharp">
-	    <type fullname="UIMultiScroller" preserve="all"/>
+	    <type fullname="PolyNavAgent" preserve="all"/>
+		<type fullname="UIMultiScroller" preserve="all"/>
 		<type fullname="GameUtil" preserve="all"/>
 		<type fullname="LuaBehaviour" preserve="all"/>
 		<type fullname="BaseTest" preserve="all"/>
@@ -23,6 +24,8 @@
 		<type fullname="XLuaTest.MyEnum" preserve="all"/>
 		<type fullname="XLuaTest.NoGc" preserve="all"/>
 		<type fullname="TQ.LuaForm" preserve="all"/>
+		<type fullname="TQ.LuaRole" preserve="all"/>
+		<type fullname="TQ.TimeAction" preserve="all"/>
 		<type fullname="Tutorial.DerivedClass+TestEnumInner" preserve="all"/>
 		
 	</assembly>

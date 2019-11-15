@@ -18,6 +18,8 @@ UIFormId={
 
     --创建角色
     CreateRole = 1001;
+    --游戏场景
+    GameScene = 1002;
 
     --任务列表
     UI_Task = 101;

@@ -101,7 +101,6 @@ namespace TQ
                     return com.Trans.GetComponent<ScrollRect>();
                 case LuaConType.MulityScroll:
                     return com.Trans.GetComponent<UIMultiScroller>();
-        
             }
 
             return com.Trans;
@@ -143,7 +142,9 @@ namespace TQ
             }
         }
 
-
+        /// <summary>
+        /// 关闭
+        /// </summary>
         protected override void OnClose()
         {
             base.OnClose();
@@ -152,7 +153,9 @@ namespace TQ
                 onClose();
             }
         }
-
+        /// <summary>
+        /// 删除
+        /// </summary>
         protected override void OnBeforDestry()
         {
             base.OnBeforDestry();

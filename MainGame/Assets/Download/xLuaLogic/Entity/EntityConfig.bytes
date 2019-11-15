@@ -1,1 +1,2 @@
 require('Entity/RetGameServerEntity')
+require('Entity/Sys_SceneDatailEntity')

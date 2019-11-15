@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XLua;
 
 namespace TQ
 {
@@ -12,18 +13,16 @@ namespace TQ
         public override void OnEnter()
         {
             base.OnEnter();
+
             GameEntry.Log(LogCategory.Procedure, "OnEnter ProcedureLogOn");
             //¼ÓÔØµÇÂ¼³¡¾°
             GameEntry.UI.OpenUIForm(UIFormId.LogOn);
-
-            //GameEntry.Scene.LoadScene(1, true, onComplete: () =>
+            //GameEntry.Scene.LoadScene(11, true, onComplete: () =>
             //   {
             //       //¼ÓÔØµÇÂ¼ui
             //       GameEntry.Event.CommonEvent.Dispatch(SysEventId.CloseCheckVersionUI);
             //   });
-
             GameEntry.Event.CommonEvent.Dispatch(SysEventId.CloseCheckVersionUI);
-
         }
 
 

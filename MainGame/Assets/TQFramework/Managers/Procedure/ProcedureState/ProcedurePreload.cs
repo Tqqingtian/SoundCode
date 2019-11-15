@@ -31,6 +31,7 @@ namespace TQ
         {
             base.OnEnter();
             GameEntry.Log(LogCategory.Procedure, "OnEnter ProcedurePreload");
+       
 
             GameEntry.Event.CommonEvent.AddEventListener(SysEventId.LoadDataTableComplete, OnLoadDataTableComplete);
             GameEntry.Event.CommonEvent.AddEventListener(SysEventId.LoadOneDataTableComplete, OnLoadOneDataTableComplete);
@@ -108,12 +109,17 @@ namespace TQ
         {
             GameEntry.Log(LogCategory.Normal, "加载所有c#表完毕");
 
-            //List<ChapterEntity> lit = GameEntry.DataTable.DataTableManager.ChapterDBModel.GetList();
+            //List<JobEntity> lit = GameEntry.DataTable.DataTableManager.JobDBModel.GetList();
             //for (int i = 0; i < lit.Count; i++)
             //{
-            //    Debug.Log(lit[i].ChapterName);
+            //    Debug.Log(lit[i].AttackNumber);
             //}
-            GameEntry.Lua.LoadDataTable("Job", (MMO_MemoryStream ms) => {
+
+            JobEntity lit = GameEntry.DataTable.DataTableManager.JobDBModel.Get(1);
+
+            Debug.Log(lit.HP);
+            GameEntry.Lua.LoadDataTable("Job", (MMO_MemoryStream ms) =>
+            {
 
 
             });

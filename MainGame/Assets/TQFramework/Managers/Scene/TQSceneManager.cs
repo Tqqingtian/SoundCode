@@ -142,7 +142,7 @@ namespace TQ
             m_CurrSceneDetailList = GameEntry.DataTable.DataTableManager.Sys_SceneDatailDBModel.GetListBySceneId(m_CurrSceneEntity.Id, 2);
             m_NeedLoadOrUnloadSceneDetailCount = m_CurrSceneDetailList.Count;
 
-            Debug.Log(m_CurrSceneEntity.Id);
+
             for (int i = 0; i < m_NeedLoadOrUnloadSceneDetailCount; i++)
             {
 

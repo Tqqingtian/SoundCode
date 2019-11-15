@@ -2,7 +2,7 @@ UI_CreateRoleCtrl = {};
 local this = UI_CreateRoleCtrl;
 
 function UI_CreateRoleCtrl.OnInit()
-    GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.RoleOperation_CreateRoleReturn,this.OnRoleOperation_DeleteRoleReturn)
+    GameEntry.Event.SocketEvent:AddEventListener(ProtoCode.RoleOperation_CreateRoleReturn,this.OnRoleOperation_CreateRoleReturn)
 end
 
 function UI_CreateRoleCtrl.OnOpen(userData)
@@ -10,7 +10,7 @@ function UI_CreateRoleCtrl.OnOpen(userData)
     local selectRole;
      UI_CreateRoleView.btnCoatard:GetComponent("UnityEngine.UI.Button").onClick:AddListener(
              function()
-                print("选择法师")
+                print("选择修真")
                  selectRole=1;
                  UI_CreateRoleView.txtRoleInfo.text = GameInit.jobList[1].Desc;
              end
@@ -45,7 +45,7 @@ function UI_CreateRoleCtrl.OnOpen(userData)
 end
 
 
-function UI_CreateRoleCtrl.OnRoleOperation_DeleteRoleReturn(buffer)
+function UI_CreateRoleCtrl.OnRoleOperation_CreateRoleReturn(buffer)
     local proto =RoleOperation_CreateRoleReturnProto.GetProto(buffer);
     print(proto.IsSuccess)
     if proto.IsSuccess then

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using TQ;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TestPool : MonoBehaviour
 {
@@ -12,7 +13,11 @@ public class TestPool : MonoBehaviour
     void Start()
     {
 
+
         TQ.GameEntry.Pool.SetClassObjectResideCount<CusUserData>(3);
+        Button d;
+     
+        
         //StartCoroutine(CreateObj());
     }
     private Queue<Transform> m_RoleObjList = new Queue<Transform>();
@@ -56,7 +61,7 @@ public class TestPool : MonoBehaviour
             //    trans.gameObject.SetActive(true);
             //    m_RoleObjList.Enqueue(trans);
             //});
-            GameEntry.Pool.GameObjectSpawn(3, (Transform trans) =>
+            GameEntry.Pool.GameObjectSpawn(4, (Transform trans) =>
             {
                 obj = trans;
             });

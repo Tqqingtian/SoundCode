@@ -60,6 +60,8 @@ namespace TQ
         /// 章表
         /// </summary>
         public ChapterDBModel ChapterDBModel {  get;  private set;}
+
+        public JobDBModel JobDBModel { get; private set; }
         /// <summary>
         /// 关卡表
         /// </summary>
@@ -96,6 +98,8 @@ namespace TQ
 
             ChapterDBModel = new ChapterDBModel();
             GameLevelDBModel = new GameLevelDBModel();
+
+            JobDBModel = new JobDBModel();
         }
         /// <summary>
         /// 加载表格
@@ -119,6 +123,8 @@ namespace TQ
             ChapterDBModel.LoadData();
             GameLevelDBModel.LoadData();
             TaskDBModel.LoadData();
+
+            JobDBModel.LoadData();
 
             //所有加载表格完毕（c#里的）
             //GameEntry.Event.CommonEvent.Dispatch(SysEventId.LoadDataTableComplete);
@@ -196,6 +202,8 @@ namespace TQ
             ChapterDBModel.Clear();
             GameLevelDBModel.Clear();
             TaskDBModel.Clear();
+
+            JobDBModel.Clear();
         }
 
 

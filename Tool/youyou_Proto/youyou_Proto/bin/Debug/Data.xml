@@ -43,18 +43,18 @@
       <Attr AttID="636006767409792837" AttType="bool" AttEnName="IsSuccess" AttCnName="是否成功" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
       <Attr AttID="636006767409792838" AttType="int" AttEnName="MsgCode" AttCnName="消息码" AttIsLoop="false" AttToLoop="" AttToBool="IsSuccess" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636006768031099086" ProtoCode="10007" ProtoEnName="RoleOperation_EnterGame" ProtoCnName="客户端发送进入游戏消息" ProtoDesc="客户端发送进入游戏消息" ProtoCategory="C2MS" IsCSharp="true" IsLua="false">
-      <Attr AttID="636006768286681255" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636434290699390738" AttType="int" AttEnName="ChannelId" AttCnName="渠道号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636006768031099086" ProtoCode="10007" ProtoEnName="RoleOperation_EnterGame" ProtoCnName="客户端发送进入游戏消息" ProtoDesc="客户端发送进入游戏消息" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636006768286681255" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636434290699390738" AttType="int" AttEnName="ChannelId" AttCnName="渠道号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636006768658348990" ProtoCode="10008" ProtoEnName="RoleOperation_EnterGameReturn" ProtoCnName="服务器返回进入游戏消息" ProtoDesc="服务器返回进入游戏消息&#xD;&#xA;如果成功 则发送角色信息消息（110010）" ProtoCategory="MS2C" IsCSharp="true" IsLua="false">
-      <Attr AttID="636006769364036236" AttType="bool" AttEnName="IsSuccess" AttCnName="是否成功" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636006769364036237" AttType="int" AttEnName="MsgCode" AttCnName="消息码" AttIsLoop="false" AttToLoop="" AttToBool="IsSuccess" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636006768658348990" ProtoCode="10008" ProtoEnName="RoleOperation_EnterGameReturn" ProtoCnName="服务器返回进入游戏消息" ProtoDesc="服务器返回进入游戏消息&#xD;&#xA;如果成功 则发送角色信息消息（110010）" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636006769364036236" AttType="bool" AttEnName="IsSuccess" AttCnName="是否成功" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636006769364036237" AttType="int" AttEnName="MsgCode" AttCnName="消息码" AttIsLoop="false" AttToLoop="" AttToBool="IsSuccess" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636006769870724518" ProtoCode="10009" ProtoEnName="RoleOperation_SelectRoleInfo" ProtoCnName="客户端查询角色信息" ProtoDesc="客户端查询角色信息" ProtoCategory="C2MS" IsCSharp="true" IsLua="false">
-      <Attr AttID="636006770087962942" AttType="int" AttEnName="RoldId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636006769870724518" ProtoCode="10009" ProtoEnName="RoleOperation_SelectRoleInfo" ProtoCnName="客户端查询角色信息" ProtoDesc="客户端查询角色信息" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636006770087962942" AttType="int" AttEnName="RoldId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636006770476872765" ProtoCode="10010" ProtoEnName="RoleOperation_SelectRoleInfoReturn" ProtoCnName="服务器返回角色信息" ProtoDesc="服务器返回角色信息" ProtoCategory="C2MS" IsCSharp="false" IsLua="true">
+    <Proto ProtoID="636006770476872765" ProtoCode="10010" ProtoEnName="RoleOperation_SelectRoleInfoReturn" ProtoCnName="服务器返回角色信息" ProtoDesc="服务器返回角色信息" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
       <Attr AttID="636006777787155612" AttType="bool" AttEnName="IsSuccess" AttCnName="是否成功" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
       <Attr AttID="636006777787155613" AttType="int" AttEnName="MsgCode" AttCnName="消息码" AttIsLoop="false" AttToLoop="" AttToBool="IsSuccess" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
       <Attr AttID="636006777787155614" AttType="int" AttEnName="RoldId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="IsSuccess" AttToBoolResult="true" AttToCus="" AttIsExistsProto="false" />
@@ -200,117 +200,117 @@
     </Proto>
   </Menu>
   <Menu MenuId="636170894503687958" MenuName="世界地图" HasChild="true">
-    <Proto ProtoID="636170894631027323" ProtoCode="13001" ProtoEnName="WorldMap_RoleEnter" ProtoCnName="客户端发送进入世界地图场景消息" ProtoDesc="" ProtoCategory="C2SS" IsCSharp="false" IsLua="false">
-      <Attr AttID="636170895797998876" AttType="int" AttEnName="WorldMapSceneId" AttCnName="世界地图场景编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636170894631027323" ProtoCode="13001" ProtoEnName="WorldMap_RoleEnter" ProtoCnName="客户端发送进入世界地图场景消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636170895797998876" AttType="int" AttEnName="WorldMapSceneId" AttCnName="世界地图场景编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636170896051495400" ProtoCode="13002" ProtoEnName="WorldMap_RoleEnterReturn" ProtoCnName="服务器返回进入世界地图场景消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636170897329191197" AttType="bool" AttEnName="IsSuccess" AttCnName="是否成功" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636170897329191198" AttType="int" AttEnName="MsgCode" AttCnName="消息码" AttIsLoop="false" AttToLoop="" AttToBool="IsSuccess" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636170896051495400" ProtoCode="13002" ProtoEnName="WorldMap_RoleEnterReturn" ProtoCnName="服务器返回进入世界地图场景消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636170897329191197" AttType="bool" AttEnName="IsSuccess" AttCnName="是否成功" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636170897329191198" AttType="int" AttEnName="MsgCode" AttCnName="消息码" AttIsLoop="false" AttToLoop="" AttToBool="IsSuccess" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636170899346512784" ProtoCode="13003" ProtoEnName="WorldMap_Pos" ProtoCnName="客户端发送自身坐标" ProtoDesc="" ProtoCategory="C2SS" IsCSharp="false" IsLua="false">
-      <Attr AttID="636170900339188582" AttType="float" AttEnName="x" AttCnName="x" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636170900339188583" AttType="float" AttEnName="y" AttCnName="y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636170900339188584" AttType="float" AttEnName="z" AttCnName="z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636170900339188585" AttType="float" AttEnName="yAngle" AttCnName="y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636170899346512784" ProtoCode="13003" ProtoEnName="WorldMap_Pos" ProtoCnName="客户端发送自身坐标" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636170900339188582" AttType="float" AttEnName="x" AttCnName="x" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636170900339188583" AttType="float" AttEnName="y" AttCnName="y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636170900339188584" AttType="float" AttEnName="z" AttCnName="z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636170900339188585" AttType="float" AttEnName="yAngle" AttCnName="y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636176838643508234" ProtoCode="13004" ProtoEnName="WorldMap_RoleAlreadyEnter" ProtoCnName="客户端发送角色已经进入世界地图场景消息" ProtoDesc="" ProtoCategory="C2SS" IsCSharp="false" IsLua="false">
-      <Attr AttID="636176841119843815" AttType="int" AttEnName="TargetWorldMapSceneId" AttCnName="目标场景编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636176841119843816" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636176841119843817" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636176841119843818" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636176841119843819" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636176838643508234" ProtoCode="13004" ProtoEnName="WorldMap_RoleAlreadyEnter" ProtoCnName="客户端发送角色已经进入世界地图场景消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636176841119843815" AttType="int" AttEnName="TargetWorldMapSceneId" AttCnName="目标场景编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636176841119843816" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636176841119843817" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636176841119843818" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636176841119843819" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636176842014468342" ProtoCode="13005" ProtoEnName="WorldMap_OtherRoleEnter" ProtoCnName="服务器广播其他角色进入场景消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177296952079440" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177887870366386" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177888594319963" AttType="int" AttEnName="RoleLevel" AttCnName="角色等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177296952079441" AttType="int" AttEnName="RoleJobId" AttCnName="角色职业编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636207154020952303" AttType="int" AttEnName="RoleCurrMP" AttCnName="当前魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636207154020952302" AttType="int" AttEnName="RoleMaxMP" AttCnName="最大魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636207154020952301" AttType="int" AttEnName="RoleCurrHP" AttCnName="当前血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636207154020952300" AttType="int" AttEnName="RoleMaxHP" AttCnName="最大血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177296952079442" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177296952079443" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177296952079444" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177296952079445" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636176842014468342" ProtoCode="13005" ProtoEnName="WorldMap_OtherRoleEnter" ProtoCnName="服务器广播其他角色进入场景消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177296952079440" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177887870366386" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177888594319963" AttType="int" AttEnName="RoleLevel" AttCnName="角色等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177296952079441" AttType="int" AttEnName="RoleJobId" AttCnName="角色职业编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636207154020952303" AttType="int" AttEnName="RoleCurrMP" AttCnName="当前魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636207154020952302" AttType="int" AttEnName="RoleMaxMP" AttCnName="最大魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636207154020952301" AttType="int" AttEnName="RoleCurrHP" AttCnName="当前血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636207154020952300" AttType="int" AttEnName="RoleMaxHP" AttCnName="最大血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177296952079442" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177296952079443" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177296952079444" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177296952079445" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177865665056363" ProtoCode="13006" ProtoEnName="WorldMap_OtherRoleLeave" ProtoCnName="服务器广播其他角色离开场景消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177866011801333" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636177865665056363" ProtoCode="13006" ProtoEnName="WorldMap_OtherRoleLeave" ProtoCnName="服务器广播其他角色离开场景消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177866011801333" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177871746582615" ProtoCode="13007" ProtoEnName="WorldMap_InitRole" ProtoCnName="服务器广播当前场景角色" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177885392781281" AttType="int" AttEnName="RoleCount" AttCnName="角色数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177878982149076" AttType="RoleItem" AttEnName="Item" AttCnName="角色列表" AttIsLoop="false" AttToLoop="RoleCount" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177885392781283" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177887187880268" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177888909362347" AttType="int" AttEnName="RoleLevel" AttCnName="角色等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636207150322640713" AttType="int" AttEnName="RoleMaxHP" AttCnName="最大血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636207150322640714" AttType="int" AttEnName="RoleCurrHP" AttCnName="当前血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636207150322640715" AttType="int" AttEnName="RoleMaxMP" AttCnName="最大魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636207150322640716" AttType="int" AttEnName="RoleCurrMP" AttCnName="当前魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177885392781284" AttType="int" AttEnName="RoleJobId" AttCnName="角色职业编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177885392781285" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177885392781286" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177885392781287" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177887187880273" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
+    <Proto ProtoID="636177871746582615" ProtoCode="13007" ProtoEnName="WorldMap_InitRole" ProtoCnName="服务器广播当前场景角色" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177885392781281" AttType="int" AttEnName="RoleCount" AttCnName="角色数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177878982149076" AttType="RoleItem" AttEnName="Item" AttCnName="角色列表" AttIsLoop="false" AttToLoop="RoleCount" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177885392781283" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177887187880268" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177888909362347" AttType="int" AttEnName="RoleLevel" AttCnName="角色等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636207150322640713" AttType="int" AttEnName="RoleMaxHP" AttCnName="最大血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636207150322640714" AttType="int" AttEnName="RoleCurrHP" AttCnName="当前血量" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636207150322640715" AttType="int" AttEnName="RoleMaxMP" AttCnName="最大魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636207150322640716" AttType="int" AttEnName="RoleCurrMP" AttCnName="当前魔法" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177885392781284" AttType="int" AttEnName="RoleJobId" AttCnName="角色职业编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177885392781285" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177885392781286" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177885392781287" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177887187880273" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177897667563940" ProtoCode="13008" ProtoEnName="WorldMap_CurrRoleMove" ProtoCnName="客户端发送当前角色移动消息" ProtoDesc="" ProtoCategory="C2SS" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177898968591349" AttType="float" AttEnName="TargetPosX" AttCnName="目标坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177898968591350" AttType="float" AttEnName="TargetPosY" AttCnName="目标坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177898968591351" AttType="float" AttEnName="TargetPosZ" AttCnName="目标坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636195103482972590" AttType="long" AttEnName="ServerTime" AttCnName="客户端发包时的服务器时间（毫秒）" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636195103482972591" AttType="int" AttEnName="NeedTime" AttCnName="客户端移动所需时间（毫秒）" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636177897667563940" ProtoCode="13008" ProtoEnName="WorldMap_CurrRoleMove" ProtoCnName="客户端发送当前角色移动消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177898968591349" AttType="float" AttEnName="TargetPosX" AttCnName="目标坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177898968591350" AttType="float" AttEnName="TargetPosY" AttCnName="目标坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177898968591351" AttType="float" AttEnName="TargetPosZ" AttCnName="目标坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636195103482972590" AttType="long" AttEnName="ServerTime" AttCnName="客户端发包时的服务器时间（毫秒）" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636195103482972591" AttType="int" AttEnName="NeedTime" AttCnName="客户端移动所需时间（毫秒）" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177903391751358" ProtoCode="13009" ProtoEnName="WorldMap_OtherRoleMove" ProtoCnName="服务器广播其他角色移动消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177904124412277" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177904124412278" AttType="float" AttEnName="TargetPosX" AttCnName="目标坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177904124412279" AttType="float" AttEnName="TargetPosY" AttCnName="目标坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177904124412280" AttType="float" AttEnName="TargetPosZ" AttCnName="目标坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636195104271281088" AttType="long" AttEnName="ServerTime" AttCnName="客户端发包时的服务器时间" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636195104271281089" AttType="int" AttEnName="NeedTime" AttCnName="客户端移动所需时间" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636177903391751358" ProtoCode="13009" ProtoEnName="WorldMap_OtherRoleMove" ProtoCnName="服务器广播其他角色移动消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177904124412277" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177904124412278" AttType="float" AttEnName="TargetPosX" AttCnName="目标坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177904124412279" AttType="float" AttEnName="TargetPosY" AttCnName="目标坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177904124412280" AttType="float" AttEnName="TargetPosZ" AttCnName="目标坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636195104271281088" AttType="long" AttEnName="ServerTime" AttCnName="客户端发包时的服务器时间" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636195104271281089" AttType="int" AttEnName="NeedTime" AttCnName="客户端移动所需时间" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177921141411691" ProtoCode="13010" ProtoEnName="WorldMap_CurrRoleUseSkill" ProtoCnName="客户端发送角色使用技能消息" ProtoDesc="" ProtoCategory="C2SS" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177923759384541" AttType="int" AttEnName="SkillId" AttCnName="技能编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384542" AttType="int" AttEnName="SkillLevel" AttCnName="技能等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384543" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384544" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384545" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384546" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384547" AttType="int" AttEnName="BeAttackCount" AttCnName="被攻击者数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384548" AttType="BeAttackItem" AttEnName="Item" AttCnName="被攻击者" AttIsLoop="false" AttToLoop="BeAttackCount" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384549" AttType="int" AttEnName="BeAttackRoleId" AttCnName="被攻击者编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
+    <Proto ProtoID="636177921141411691" ProtoCode="13010" ProtoEnName="WorldMap_CurrRoleUseSkill" ProtoCnName="客户端发送角色使用技能消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177923759384541" AttType="int" AttEnName="SkillId" AttCnName="技能编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384542" AttType="int" AttEnName="SkillLevel" AttCnName="技能等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384543" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384544" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384545" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384546" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384547" AttType="int" AttEnName="BeAttackCount" AttCnName="被攻击者数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384548" AttType="BeAttackItem" AttEnName="Item" AttCnName="被攻击者" AttIsLoop="false" AttToLoop="BeAttackCount" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384549" AttType="int" AttEnName="BeAttackRoleId" AttCnName="被攻击者编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177924112311916" ProtoCode="13011" ProtoEnName="WorldMap_OtherRoleUseSkill" ProtoCnName="服务器广播其他角色使用技能消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177925946439983" AttType="int" AttEnName="AttackRoleId" AttCnName="发起攻击角色Id" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384541" AttType="int" AttEnName="SkillId" AttCnName="技能编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384542" AttType="int" AttEnName="SkillLevel" AttCnName="技能等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384543" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384544" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384545" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384546" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384547" AttType="int" AttEnName="BeAttackCount" AttCnName="被攻击者数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384548" AttType="BeAttackItem" AttEnName="Item" AttCnName="被攻击者" AttIsLoop="false" AttToLoop="BeAttackCount" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177923759384549" AttType="int" AttEnName="BeAttackRoleId" AttCnName="被攻击者编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177923759384550" AttType="int" AttEnName="ReduceHp" AttCnName="减少HP" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
-      <Attr AttID="636177923759384551" AttType="byte" AttEnName="IsCri" AttCnName="是否暴击" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" />
+    <Proto ProtoID="636177924112311916" ProtoCode="13011" ProtoEnName="WorldMap_OtherRoleUseSkill" ProtoCnName="服务器广播其他角色使用技能消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177925946439983" AttType="int" AttEnName="AttackRoleId" AttCnName="发起攻击角色Id" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384541" AttType="int" AttEnName="SkillId" AttCnName="技能编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384542" AttType="int" AttEnName="SkillLevel" AttCnName="技能等级" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384543" AttType="float" AttEnName="RolePosX" AttCnName="角色坐标X" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384544" AttType="float" AttEnName="RolePosY" AttCnName="角色坐标Y" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384545" AttType="float" AttEnName="RolePosZ" AttCnName="角色坐标Z" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384546" AttType="float" AttEnName="RoleYAngle" AttCnName="角色Y轴旋转" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384547" AttType="int" AttEnName="BeAttackCount" AttCnName="被攻击者数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384548" AttType="BeAttackItem" AttEnName="Item" AttCnName="被攻击者" AttIsLoop="false" AttToLoop="BeAttackCount" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384549" AttType="int" AttEnName="BeAttackRoleId" AttCnName="被攻击者编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384550" AttType="int" AttEnName="ReduceHp" AttCnName="减少HP" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
+      <Attr AttID="636177923759384551" AttType="byte" AttEnName="IsCri" AttCnName="是否暴击" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="Item" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177927014273546" ProtoCode="13012" ProtoEnName="WorldMap_OtherRoleDie" ProtoCnName="服务器广播其他角色死亡消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636209519046610094" AttType="int" AttEnName="AttackRoleId" AttCnName="发起攻击角色Id" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636209432834942251" AttType="int" AttEnName="DieCount" AttCnName="死亡角色数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177927328108036" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="DieCount" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636177927014273546" ProtoCode="13012" ProtoEnName="WorldMap_OtherRoleDie" ProtoCnName="服务器广播其他角色死亡消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636209519046610094" AttType="int" AttEnName="AttackRoleId" AttCnName="发起攻击角色Id" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636209432834942251" AttType="int" AttEnName="DieCount" AttCnName="死亡角色数量" AttIsLoop="true" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177927328108036" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="DieCount" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177932102113299" ProtoCode="13013" ProtoEnName="WorldMap_CurrRoleUpdateInfo" ProtoCnName="客户端发送角色更新信息消息" ProtoDesc="" ProtoCategory="C2SS" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177932716499184" AttType="int" AttEnName="RoldId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177932716499185" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636177932102113299" ProtoCode="13013" ProtoEnName="WorldMap_CurrRoleUpdateInfo" ProtoCnName="客户端发送角色更新信息消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177932716499184" AttType="int" AttEnName="RoldId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177932716499185" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636177932800980242" ProtoCode="13014" ProtoEnName="WorldMap_OtherRoleUpdateInfo" ProtoCnName="服务器广播角色更新信息消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636177933584873494" AttType="int" AttEnName="RoldId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
-      <Attr AttID="636177933584873495" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636177932800980242" ProtoCode="13014" ProtoEnName="WorldMap_OtherRoleUpdateInfo" ProtoCnName="服务器广播角色更新信息消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636177933584873494" AttType="int" AttEnName="RoldId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
+      <Attr AttID="636177933584873495" AttType="string" AttEnName="RoleNickName" AttCnName="角色昵称" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636209558043996480" ProtoCode="13015" ProtoEnName="WorldMap_CurrRoleResurgence" ProtoCnName="客户端发送角色复活消息" ProtoDesc="" ProtoCategory="C2SS" IsCSharp="false" IsLua="false">
-      <Attr AttID="636209558420832523" AttType="int" AttEnName="Type" AttCnName="复活类型" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636209558043996480" ProtoCode="13015" ProtoEnName="WorldMap_CurrRoleResurgence" ProtoCnName="客户端发送角色复活消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636209558420832523" AttType="int" AttEnName="Type" AttCnName="复活类型" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
-    <Proto ProtoID="636209558526097191" ProtoCode="13016" ProtoEnName="WorldMap_OtherRoleResurgence" ProtoCnName="服务器广播角色复活消息" ProtoDesc="" ProtoCategory="SS2C" IsCSharp="false" IsLua="false">
-      <Attr AttID="636209559165024712" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" />
+    <Proto ProtoID="636209558526097191" ProtoCode="13016" ProtoEnName="WorldMap_OtherRoleResurgence" ProtoCnName="服务器广播角色复活消息" ProtoDesc="" ProtoCategory="C2MS/MS2C/C2SS" IsCSharp="true" IsLua="true">
+      <Attr AttID="636209559165024712" AttType="int" AttEnName="RoleId" AttCnName="角色编号" AttIsLoop="false" AttToLoop="" AttToBool="" AttToBoolResult="false" AttToCus="" AttIsExistsProto="false" />
     </Proto>
   </Menu>
   <Menu MenuId="636344986869352752" MenuName="任务系统" HasChild="true">

@@ -1,0 +1,26 @@
+UI_GameSceneCtrl ={};
+
+local this = UI_GameSceneCtrl;
+
+function UI_GameSceneCtrl.OnInit(userData)
+    print('UI_GameSceneCtrl.OnInit');
+end
+
+function UI_GameSceneCtrl.OnOpen(userData)
+    this.selectRoleInfoProto = UI_SelectRoleCtrl.selectRoleInfoProto;
+    GameEntry.Procedure:ChangeState(ProcedureState.WordMap);
+    UI_GameSceneView.NickName:GetComponent("UnityEngine.UI.Text").text = this.selectRoleInfoProto.RoleNickName;
+    UI_GameSceneView.SliderHP:GetComponent("UnityEngine.UI.Scrollbar").size =
+    this.selectRoleInfoProto.CurrHP/this.selectRoleInfoProto.MaxHP;
+    UI_GameSceneView.SliderMP:GetComponent("UnityEngine.UI.Scrollbar").size =
+    this.selectRoleInfoProto.CurrMP/this.selectRoleInfoProto.MaxMP;
+    ;
+end
+
+function UI_GameSceneCtrl.OnClose()
+
+end
+
+function UI_GameSceneCtrl.OnBeforDestry()
+
+end

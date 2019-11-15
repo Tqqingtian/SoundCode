@@ -1,0 +1,49 @@
+ProcedureWordMap = {}
+local this = ProcedureWordMap;
+--进入游戏
+function ProcedureWordMap.OnEnter()
+    print("ProcedureWordMap.OnEnter()");
+    this.selectRoleInfoProto = UI_GameSceneCtrl.selectRoleInfoProto;
+    GameEntry.Scene:LoadScene(10,true);
+    --进入游戏内之后
+    --初始化 场景信息
+    this.InitScene();
+    --添加监听
+    this.AddEventListener();
+end
+
+function ProcedureWordMap.InitScene()
+    local lastPos = LuaDateTool.split(this.selectRoleInfoProto.LastInWorldMapPos,"_");
+    GameEntry.Pool:GameObjectSpawn(PrefabId.Coatard,
+            function (trans)
+        trans.localPosition = Vector3(tonumber(lastPos[1]), tonumber(lastPos[2]), tonumber(lastPos[3]));
+        --trans.localPosition = Vector3(0, 0, 0);
+    end
+    );
+end
+
+function ProcedureWordMap.AddEventListener()
+    --服务器广播当前场景角色
+    --GameEntry.Socket:AddEventListener();
+    --SocketDispatcher.Instance:AddEventListener(ProtoCode.WorldMap_RoleEnter, OnWorldMap_RoleEnter);
+end
+
+function ProcedureWordMap.OnWorldMap_RoleEnter()
+
+end
+
+function ProcedureWordMap.OnUpdate()
+
+end
+
+
+function ProcedureWordMap.OnLeave()
+    --SocketDispatcher.Instance:end(ProtoCodeDef.WorldMap_InitRole, OnWorldMapInitRole);
+end
+
+function ProcedureWordMap.OnDestry()
+
+end
+
+
+

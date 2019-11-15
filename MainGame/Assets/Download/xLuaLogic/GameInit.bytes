@@ -13,11 +13,16 @@ function GameInit.Init()
 	this.LoadDataTable();
 	this.InitProto();
 	this.InitCommon();
+	this.InitProcedure();
 end
 
 function GameInit.InitProcedure()
 
-	require('Modules/Procedure/ProcedureState/ProcedureLogOn');
+	require('ProcedureState/ProcedureState');
+	require('ProcedureState/ProcedureLogOn');
+	require('ProcedureState/ProcedureEnterGame');
+	require('ProcedureState/ProcedureWordMap');
+	require('Test/TestLua');
 
 
 end
@@ -41,6 +46,9 @@ function GameInit.InitCtrlAndViews()
 
 	require('Modules/SelectRole/UI_CreateRoleCtrl');
 	require('Modules/SelectRole/UI_CreateRoleView');
+
+	require('Modules/GameScene/UI_GameSceneCtrl');
+	require('Modules/GameScene/UI_GameSceneView');
 	--等待
 	require('Modules/Global/UI_WaitingCtrl');
 	require('Modules/Global/UI_WaitingView');
@@ -70,6 +78,10 @@ function GameInit.LoadDataTable()
 	require('DataNode/DataTable/Create/Sys_PrefabDBModel');
 	Sys_PrefabDBModel.LoadList();
 	--print('职业表===')
+
+	require('DataNode/DataTable/Create/Sys_SceneDatailEntity');
+	require('DataNode/DataTable/Create/Sys_SceneDatailDBModel');
+	Sys_SceneDatailDBModel.LoadList();
 end
 
 
@@ -105,6 +117,8 @@ function GameInit.InitCommon()
 
 	require('Common/PrefabId')
 	require('Common/json')
+	require('Common/LuaDateTool')
+	require('Role/RoleCtrl')
 end
 
 function GameInit.InitProto()

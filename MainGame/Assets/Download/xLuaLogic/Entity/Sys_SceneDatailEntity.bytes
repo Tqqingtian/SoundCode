@@ -1,0 +1,10 @@
+--这里是对应着的表来的  表改 这里就要改了
+Sys_SceneDatailEntity = {
+
+    GameScene_SelectRole = 9;
+
+    GameScene_XinShouCun = 10;
+
+    GameScene_LogOn = 11;
+
+}

@@ -1,0 +1,32 @@
+RoleCtrl = {}
+
+local this = RoleCtrl;
+
+local transform;
+
+local polyNavAgent;
+
+function RoleCtrl.OnStart(trans)
+    transform = trans;
+    polyNavAgent = transform:GetComponent(typeof(CS.PolyNavAgent));
+
+    print(polyNavAgent)
+    print(transform.name)
+end
+
+function RoleCtrl.OnUpdate()
+    if UnityEngine.Input:GetMouseButton(0) then
+        --print(UnityEngine.Input.mousePosition)
+        this.CurrMovePoint= UnityEngine.Camera.main:ScreenToWorldPoint(UnityEngine.Input.mousePosition);
+        print(this.CurrMovePoint);
+        polyNavAgent:SetDestination(Vector2(this.CurrMovePoint.x,this.CurrMovePoint.y));
+
+    end
+end
+
+
+function RoleCtrl.OnDestroy()
+
+end
+
+

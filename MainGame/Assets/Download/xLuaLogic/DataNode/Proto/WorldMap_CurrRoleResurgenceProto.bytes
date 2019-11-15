@@ -1,0 +1,70 @@
+--客户端发送角色复活消息
+WorldMap_CurrRoleResurgenceProto = { ProtoCode = 13015, Type = 0 }
+local this = WorldMap_CurrRoleResurgenceProto;
+
+WorldMap_CurrRoleResurgenceProto.__index = WorldMap_CurrRoleResurgenceProto;
+
+function WorldMap_CurrRoleResurgenceProto.New()
+    local self = { };
+    setmetatable(self, WorldMap_CurrRoleResurgenceProto);
+    return self;
+end
+
+function WorldMap_CurrRoleResurgenceProto.GetProtoName()
+    return "WorldMap_CurrRoleResurgence";
+end
+
+
+--发送协议
+function WorldMap_CurrRoleResurgenceProto.SendProto(proto, isChild)
+
+    local ms = nil;
+
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Socket.SocketSendMS;
+        ms:SetLength(0);
+        ms:WriteUShort(proto.ProtoCode);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStream();
+        ms.SetLength(0);
+    end
+
+    ms:WriteInt(proto.Type);
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>发送消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+
+        CS.TQ.GameEntry.Socket:SendMsg(ms:ToArray());
+    else
+        local retBuffer = ms:ToArray();
+        CS.TQ.GameEntry.Lua:EnqueueMemoryStream(ms);
+        return retBuffer;
+    end
+end
+
+
+--解析协议
+function WorldMap_CurrRoleResurgenceProto.GetProto(buffer, isChild)
+
+    local proto = WorldMap_CurrRoleResurgenceProto.New(); --实例化一个协议对象
+    local ms = nil;
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Lua:LoadSocketReceiveMS(buffer);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStreamAndLoadBuffer(buffer);
+    end
+
+    proto.Type = ms:ReadInt();
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>接收消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+    end
+
+    return proto;
+end

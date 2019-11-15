@@ -11,6 +11,7 @@ GameEntry=CS.TQ.GameEntry;
 JsonDataLua = CS.TQ.JsonDataLua;
 ReTValue = CS.ReTValue;
 PlayerPrefs = CS.UnityEngine.PlayerPrefs;
+UnityEngine = CS.UnityEngine;
 
 HttpURL = "http://127.0.0.1:8890";
 

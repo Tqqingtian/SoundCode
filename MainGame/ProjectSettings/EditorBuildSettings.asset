@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Download/Scenes/GameScene_SelectRole.unity
     guid: c123be98ed9a3714aa60e9fd2d4eb26f
   - enabled: 1
+    path: Assets/Download/Scenes/GameScene_XinShouCun.unity
+    guid: 8c1f6b3998d70f9499b54ebe7be7bdd9
+  - enabled: 1
     path: Assets/Download/Scenes/GameScene_DaLi.unity
     guid: d938b771fd48cac41bbba4ccf7b2277b
   - enabled: 1

@@ -63,6 +63,9 @@ namespace TQ
                      uiObj.transform.localPosition = Vector3.zero;
                      uiObj.transform.localScale = Vector3.one;
 
+                     RectTransform rect = uiObj.GetComponent<RectTransform>();
+                     rect.offsetMax = new Vector2(0, 0);
+                     rect.offsetMin = new Vector2(0, 0);
                      formBase = uiObj.GetComponent<UIFormBase>();
 
                      formBase.Init(uiFormID, entity.UIGroupId, entity.DisableUILayer == 1, entity.IsLock == 1, userData);

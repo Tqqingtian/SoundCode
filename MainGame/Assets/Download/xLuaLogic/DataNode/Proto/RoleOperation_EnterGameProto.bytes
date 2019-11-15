@@ -1,0 +1,72 @@
+--客户端发送进入游戏消息
+RoleOperation_EnterGameProto = { ProtoCode = 10007, RoleId = 0, ChannelId = 0 }
+local this = RoleOperation_EnterGameProto;
+
+RoleOperation_EnterGameProto.__index = RoleOperation_EnterGameProto;
+
+function RoleOperation_EnterGameProto.New()
+    local self = { };
+    setmetatable(self, RoleOperation_EnterGameProto);
+    return self;
+end
+
+function RoleOperation_EnterGameProto.GetProtoName()
+    return "RoleOperation_EnterGame";
+end
+
+
+--发送协议
+function RoleOperation_EnterGameProto.SendProto(proto, isChild)
+
+    local ms = nil;
+
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Socket.SocketSendMS;
+        ms:SetLength(0);
+        ms:WriteUShort(proto.ProtoCode);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStream();
+        ms.SetLength(0);
+    end
+
+    ms:WriteInt(proto.RoleId);
+    ms:WriteInt(proto.ChannelId);
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>发送消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+
+        CS.TQ.GameEntry.Socket:SendMsg(ms:ToArray());
+    else
+        local retBuffer = ms:ToArray();
+        CS.TQ.GameEntry.Lua:EnqueueMemoryStream(ms);
+        return retBuffer;
+    end
+end
+
+
+--解析协议
+function RoleOperation_EnterGameProto.GetProto(buffer, isChild)
+
+    local proto = RoleOperation_EnterGameProto.New(); --实例化一个协议对象
+    local ms = nil;
+    if (isChild == nil or isChild == false) then
+        ms = CS.TQ.GameEntry.Lua:LoadSocketReceiveMS(buffer);
+    else
+        ms = CS.TQ.GameEntry.Lua:DequeueMemoryStreamAndLoadBuffer(buffer);
+    end
+
+    proto.RoleId = ms:ReadInt();
+    proto.ChannelId = ms:ReadInt();
+
+    if (isChild == nil or isChild == false) then
+        if (CS.TQ.GameEntry.Lua.DebugLogProto == true) then
+            print(string.format("<color=#000000>接收消息:</color><color=#000000>%s %s</color>", this.GetProtoName(), proto.ProtoCode));
+            print(string.format("<color=#000000>==>>%s</color>", json.encode(proto)));
+        end
+    end
+
+    return proto;
+end

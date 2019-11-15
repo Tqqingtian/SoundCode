@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+    <Compile Include="Assets\Download\Audio\2D Beginner\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\PolyNav2D\Scripts\Editor\PolyNav2DInspector.cs" />
     <Compile Include="Assets\TQFramework\Editor\AssetBundle\AssetBundleDAL.cs" />
     <Compile Include="Assets\TQFramework\Editor\AssetBundle\AssetBundleEntity.cs" />
     <Compile Include="Assets\TQFramework\Editor\AssetBundle\AssetBundleWindow.cs" />

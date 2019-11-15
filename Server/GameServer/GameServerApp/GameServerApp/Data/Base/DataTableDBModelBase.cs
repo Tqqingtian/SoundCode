@@ -43,7 +43,7 @@ where P : DataTableEntityBase
     public void LoadData()
     {
         //1.拿到这个表格的buffer
-        byte[] buffer = LocalFileMgr.GetBuffer(string.Format(@"E:\NEWMORPG\Server\GameData\{0}.bytes", DataTableName));
+        byte[] buffer = LocalFileMgr.GetBuffer(string.Format(@"E:\WorldTheAutumn\SoundCode\Server\GameData\{0}.bytes", DataTableName));
         
         //2.加载数据
         using (MMO_MemoryStream ms = new MMO_MemoryStream(buffer))

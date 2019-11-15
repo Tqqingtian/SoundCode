@@ -1,0 +1,19 @@
+ProcedureState={
+
+    Launch = 0;
+    CheckVersion = 1;
+    --预加载流程
+    Preload = 2;
+    ChangeScene = 3;
+    --选择角色流程（暂时不用）
+    LogOn = 4;
+    --选择角色
+    SelectRole = 5;
+    --进入游戏（暂时不用）
+    EnterGame = 6;
+    --世界地图
+    WordMap = 7;
+    --游戏内场景
+    GameLevel = 8;
+
+}

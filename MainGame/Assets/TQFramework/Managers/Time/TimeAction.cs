@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XLua;
 
 namespace TQ
 {
     /// <summary>
     /// ¶¨Ê±Æ÷
     /// </summary>
+    [LuaCallCSharp]
     public class TimeAction
     {
         /// <summary>
@@ -91,6 +93,11 @@ namespace TQ
             m_OnUpdate = onUpdate;
             m_OnComplete = onComplete;
             return this;
+        }
+
+        public void Init(float delayTime, Action onComplete)
+        { 
+            Init(delayTime,0,1, null, null, onComplete);
         }
 
         public void Run()

@@ -1,0 +1,18 @@
+ProcedureLogOn = {}
+local this = ProcedureLogOn;
+--进入游戏
+function ProcedureLogOn.OnEnter()
+
+    print("ProcedureLogOn.OnEnter()");
+end
+
+function ProcedureLogOn.OnUpdate()
+end
+
+function ProcedureLogOn.OnLeave()
+    print("ProcedureLogOn.OnLeave()");
+end
+
+function ProcedureLogOn.OnDestry()
+    print("ProcedureLogOn.OnDestry()");
+end

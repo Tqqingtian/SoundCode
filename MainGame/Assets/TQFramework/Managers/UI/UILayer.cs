@@ -51,7 +51,7 @@ namespace TQ
                 m_UILayerDic[formBase.GroupId] -= 10;
             }
 
-            formBase.CurrCanvas.sortingOrder = m_UILayerDic[formBase.GroupId];
+            //formBase.CurrCanvas.sortingOrder = m_UILayerDic[formBase.GroupId];
         }
 
     }

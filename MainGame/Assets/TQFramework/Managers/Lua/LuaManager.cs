@@ -18,8 +18,6 @@ namespace TQ
         /// 全局的lua引擎
         /// </summary>
         public static LuaEnv luaEnv;
-        
-
         /// <summary>
         /// 初始化
         /// </summary>

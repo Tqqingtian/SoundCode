@@ -12,11 +12,11 @@ namespace TQ
     {
         [Header("标准的宽度")]
         [SerializeField]
-        private int m_StandardWidth = 720;
+        private int m_StandardWidth = 1280;
 
         [Header("标准的高度")]
         [SerializeField]
-        private int m_StandardHeight = 1280;
+        private int m_StandardHeight = 720;
 
         [Header("ui摄像机")]
         public Camera UICamera;
@@ -70,14 +70,15 @@ namespace TQ
         protected override void OnAwake()
         {
             base.OnAwake();
-            
+            Debug.Log("初始化自适应");
             m_UIGroupDic = new Dictionary<byte, UIGroup>();
             GameEntry.RegisterUpdateComponent(this);
 
             m_StandardScreen = m_StandardWidth / (float)m_StandardHeight;
             m_CurrScreen = Screen.width / (float)Screen.height;
 
-            NormalFormCanvasScaler();
+            //NormalFormCanvasScaler();
+            LoadingFormCanvasScaler();
             int len = UIGroups.Length;
             for (int i = 0; i < len; i++)
             {
@@ -90,15 +91,15 @@ namespace TQ
 
             m_UIPool = new UIPool();
         }
-        
+
         #region UI适配
         /// <summary>
         /// LoadingForm适配缩放
         /// </summary>
         public void LoadingFormCanvasScaler()
         {
-        
-         
+
+
             if (m_CurrScreen > m_StandardScreen)
             {
                 m_UIRootCanvasScaler.matchWidthOrHeight = 0;
@@ -107,7 +108,7 @@ namespace TQ
             {
                 m_UIRootCanvasScaler.matchWidthOrHeight = m_StandardScreen - m_CurrScreen;
             }
-          
+
         }
         /// <summary>
         /// FullForm适配缩放
@@ -122,8 +123,8 @@ namespace TQ
         /// </summary>
         public void NormalFormCanvasScaler()
         {
-            m_UIRootCanvasScaler.matchWidthOrHeight = m_CurrScreen >= m_StandardScreen ? 1:0;
-            
+            m_UIRootCanvasScaler.matchWidthOrHeight = m_CurrScreen >= m_StandardScreen ? 1 : 0;
+
         }
         #endregion
 
@@ -144,17 +145,11 @@ namespace TQ
         /// <summary>
         /// 打开ui窗口
         /// </summary>
-        public void OpenUIForm(int uiFormID, object userData = null,BaseAction<UIFormBase> onOpen=null)
+        public void OpenUIForm(int uiFormID, object userData = null, BaseAction<UIFormBase> onOpen = null)
         {
             m_UIPool.CheckByOpenUI();
+
             m_UIManager.OpenUIForm(uiFormID, userData, onOpen);
-        }
-        /// <summary>
-        /// 打开UI的小实体
-        /// </summary>
-        public ResourceEntity LoadUIItem(int uiItemID)
-        {
-            return  m_UIManager.LoadUIItem(uiItemID);
         }
         /// <summary>
         /// 根据uiFormId关闭ui
@@ -162,7 +157,7 @@ namespace TQ
         /// <param name="uiformId"></param>
         public void CloseUIForm(int uiformId)
         {
-            print("根据uiFormId关闭ui"+uiformId);
+            print("根据uiFormId关闭ui" + uiformId);
             m_UIManager.CloseUIForm(uiformId);
         }
         public void CloseUIForm(UIFormBase formBase)
@@ -186,7 +181,7 @@ namespace TQ
         public UIFormBase Dequeue(int uiFormId)
         {
 
-           return m_UIPool.Dequeue(uiFormId);
+            return m_UIPool.Dequeue(uiFormId);
         }
         /// <summary>
         /// ui回池
@@ -196,7 +191,7 @@ namespace TQ
         {
             m_UIPool.Enqueue(form);
         }
-    
+
         public void OnUpdate()
         {
             if (Time.time > m_NextRunTime + m_ClearInterval)

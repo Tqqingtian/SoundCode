@@ -13,10 +13,7 @@ namespace TQ
         {
             base.OnEnter();
             Debug.Log("OnEnter ProcedureEnterGame");
-
-            string name = GameEntry.Procedure.GetData<string>("name");
-            int code = GameEntry.Procedure.GetData<int>("code");
-            Debug.Log(name + ":" + code);
+            
         }
 
         public override void OnUpdate()

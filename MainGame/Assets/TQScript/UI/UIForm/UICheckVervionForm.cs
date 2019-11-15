@@ -22,7 +22,7 @@ public class UICheckVervionForm : UIFormBase
     {
         base.OnInit(userData);
         //特殊情况 先顶着
-        Init(2, 3,false, false, userData);
+        Init(2, 3, false, false, userData);
 
         GameEntry.Event.CommonEvent.AddEventListener(SysEventId.CheckVersionBeginDownload, OnCheckVersionBeginDownload);
         GameEntry.Event.CommonEvent.AddEventListener(SysEventId.CheckVersionBeginDownloadComplete, OnCheckVersionBeginDownloadComplete);

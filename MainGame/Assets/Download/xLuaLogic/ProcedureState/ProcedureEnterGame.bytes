@@ -1,0 +1,26 @@
+ProcedureEnterGame = {}
+local this = ProcedureEnterGame;
+--进入游戏
+function ProcedureEnterGame.OnEnter()
+    print("ProcedureEnterGame.OnEnter()");
+    --处理一下进入游戏的角色信息
+    print("==="..UI_SelectRoleCtrl.selectRoleInfoProto.RoleNickName);
+    GameEntry.UI:OpenUIForm(UIFormId.GameScene);
+    GameEntry.UI:CloseUIForm(UIFormId.SelectRole);
+
+end
+
+function ProcedureEnterGame.OnUpdate()
+
+end
+
+function ProcedureEnterGame.OnLeave()
+
+end
+
+function ProcedureEnterGame.OnDestry()
+
+end
+
+
+

@@ -14,7 +14,6 @@ public sealed class SocketProtoListener
     {
         GameEntry.Event.SocketEvent.AddEventListener(ProtoCodeDef.System_HeartbeatReturn, System_HeartbeatReturnHandler.OnSystem_HeartbeatReturn);
         GameEntry.Event.SocketEvent.AddEventListener(ProtoCodeDef.System_GameServerConfigReturn, System_GameServerConfigReturnHandler.OnSystem_GameServerConfigReturn);
-        GameEntry.Event.SocketEvent.AddEventListener(ProtoCodeDef.RoleOperation_EnterGameReturn, RoleOperation_EnterGameReturnHandler.OnRoleOperation_EnterGameReturn);
         GameEntry.Event.SocketEvent.AddEventListener(ProtoCodeDef.Role_ListTest, Role_ListTestHandler.OnRole_ListTest);
         GameEntry.Event.SocketEvent.AddEventListener(ProtoCodeDef.Task_SearchTaskReturn, Task_SearchTaskReturnHandler.OnTask_SearchTaskReturn);
         GameEntry.Event.SocketEvent.AddEventListener(ProtoCodeDef.Shop_BuyProductReturn, Shop_BuyProductReturnHandler.OnShop_BuyProductReturn);
@@ -33,7 +32,6 @@ public sealed class SocketProtoListener
     {
         GameEntry.Event.SocketEvent.RemoveEventListener(ProtoCodeDef.System_HeartbeatReturn, System_HeartbeatReturnHandler.OnSystem_HeartbeatReturn);
         GameEntry.Event.SocketEvent.RemoveEventListener(ProtoCodeDef.System_GameServerConfigReturn, System_GameServerConfigReturnHandler.OnSystem_GameServerConfigReturn);
-        GameEntry.Event.SocketEvent.RemoveEventListener(ProtoCodeDef.RoleOperation_EnterGameReturn, RoleOperation_EnterGameReturnHandler.OnRoleOperation_EnterGameReturn);
         GameEntry.Event.SocketEvent.RemoveEventListener(ProtoCodeDef.Role_ListTest, Role_ListTestHandler.OnRole_ListTest);
         GameEntry.Event.SocketEvent.RemoveEventListener(ProtoCodeDef.Task_SearchTaskReturn, Task_SearchTaskReturnHandler.OnTask_SearchTaskReturn);
         GameEntry.Event.SocketEvent.RemoveEventListener(ProtoCodeDef.Shop_BuyProductReturn, Shop_BuyProductReturnHandler.OnShop_BuyProductReturn);

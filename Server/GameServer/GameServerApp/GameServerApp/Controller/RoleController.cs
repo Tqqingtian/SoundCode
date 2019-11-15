@@ -23,7 +23,7 @@ namespace GameServerApp.Controller
             //客户端发送本地时间消息
             EventDispatcher.Instance.AddEventListener(ProtoCodeDef.System_Heartbeat, OnSystemHeartbeat);
             #endregion
-
+            
             #region 登录相关
             //客户端发送登录区服消息
             EventDispatcher.Instance.AddEventListener(ProtoCodeDef.RoleOperation_LogOnGameServer, OnLogOnGameServer);
@@ -54,11 +54,11 @@ namespace GameServerApp.Controller
             #endregion
 
             #region 世界地图相关
-            ////客户端发送进入世界地图消息
-            //EventDispatcher.Instance.AddEventListener(ProtoCodeDef.WorldMap_RoleEnter, OnWorldMapEnter);
+            //客户端发送进入世界地图消息
+            EventDispatcher.Instance.AddEventListener(ProtoCodeDef.WorldMap_RoleEnter, OnWorldMapEnter);
 
-            ////客户端发送世界地图上角色坐标
-            //EventDispatcher.Instance.AddEventListener(ProtoCodeDef.WorldMap_Pos, OnWorldMapPos);
+            //客户端发送世界地图上角色坐标
+            EventDispatcher.Instance.AddEventListener(ProtoCodeDef.WorldMap_Pos, OnWorldMapPos);
             #endregion
 
             #region 任务相关
@@ -159,7 +159,7 @@ namespace GameServerApp.Controller
         private void OnLogOnGameServer(Role role, byte[] buffer)
         {
             RoleOperation_LogOnGameServerProto proto = RoleOperation_LogOnGameServerProto.GetProto(role.SocketReceiveMS, buffer);
-
+            Console.WriteLine(proto.AccountId);
             //玩家帐号
             int accountId = proto.AccountId;
 
@@ -175,6 +175,8 @@ namespace GameServerApp.Controller
         /// <param name="accountId"></param>
         private void LogOnGameServerReturn(Role role, int accountId)
         {
+
+
             RoleOperation_LogOnGameServerReturnProto proto = new RoleOperation_LogOnGameServerReturnProto();
             List<RoleEntity> lst = RoleCacheModel.Instance.GetList(condition: string.Format("[AccountId]={0}", accountId));
             if (lst != null && lst.Count > 0)
@@ -249,7 +251,11 @@ namespace GameServerApp.Controller
 
             entity.CurrHP = entity.MaxHP = jobEntity.HP;
             entity.CurrMP = entity.MaxMP = jobEntity.MP;
-
+            Console.WriteLine("jobEntity.HP:" + jobEntity.HP+ "jobEntity.HP :" + jobEntity.HP + "jobEntity.ToSpeed:" + jobEntity.ToSpeed +
+                "jobEntity.WeaponDamageMin:" + jobEntity.WeaponDamageMin + "jobEntity.WeaponDamageMax:" + jobEntity.WeaponDamageMax +
+                "jobEntity.AttackNumber:" + jobEntity.AttackNumber + "jobEntity.StrikePower:" + jobEntity.StrikePower +
+                "jobEntity.PiercingPower:" + jobEntity.PiercingPower + "jobEntity.MagicPower:" + jobEntity.MagicPower +
+                " jobEntity.ChoppingDefense:" + jobEntity.ChoppingDefense+ "jobEntity.PuncturDefense:" + jobEntity.PuncturDefense);
             entity.ToSpeed = jobEntity.ToSpeed;
             entity.WeaponDamageMin = jobEntity.WeaponDamageMin;
             entity.WeaponDamageMax = jobEntity.WeaponDamageMax;
@@ -261,7 +267,7 @@ namespace GameServerApp.Controller
             entity.PuncturDefense = jobEntity.PuncturDefense;
             entity.MagicDefense = jobEntity.MagicDefense;
 
-            entity.LastInWorldMapPos = "39.71_1.353_-24.22_0";
+            entity.LastInWorldMapPos = "-8.6_3.36_0";
             //1.查询昵称是否存在
             int count = RoleCacheModel.Instance.GetCount(string.Format("[NickName]='{0}'", proto.RoleNickName));
             MFReturnValue<object> retValue = null;
@@ -343,6 +349,7 @@ namespace GameServerApp.Controller
         /// <param name="buffer"></param>
         private void OnEnterGame(Role role, byte[] buffer)
         {
+            Console.Write("客户端发送进入游戏消息");
             RoleOperation_EnterGameProto proto = RoleOperation_EnterGameProto.GetProto(role.SocketReceiveMS, buffer);
             role.RoleId = proto.RoleId;
             role.ChannelId = proto.ChannelId;
@@ -360,6 +367,7 @@ namespace GameServerApp.Controller
             RoleOperation_EnterGameReturnProto proto = new RoleOperation_EnterGameReturnProto();
 
             proto.IsSuccess = true;
+
             role.Client_Socket.SendMsg(proto.ToArray(role.SocketSendMS));
 
             OnSelectRoleInfoReturn(role); //给客户端发送角色信息
